@@ -15,6 +15,11 @@ import Testing
 struct GermanInterfaceTests {
     static let american = Locale(identifier: "en_US")
     static let german = Locale(identifier: "de_DE")
+    /// English, but not the test process's own locale: for a view in that
+    /// locale SwiftUI looks the text up as for a view without a locale, which
+    /// `GermanInterface` answers in German (on a Mac set to en_US, such as the
+    /// GitHub runner).
+    static let otherEnglish = Locale(identifier: Locale.current.identifier == "en_US" ? "en_GB" : "en_US")
 
     @Test func everyLookupPathAnswersInGerman() {
         GermanInterface.run {
@@ -33,7 +38,7 @@ struct GermanInterfaceTests {
                         == Self.width(Button(action: {}) { Text(verbatim: "Neuer Chat") }), "\(identifier)")
             }
             // Another language is not made German.
-            #expect(Self.width(Text("Cancel").environment(\.locale, Self.american))
+            #expect(Self.width(Text("Cancel").environment(\.locale, Self.otherEnglish))
                     == Self.width(Text(verbatim: "Cancel")))
             #expect(AppLanguage.interfaceLanguage() == "de")
         }

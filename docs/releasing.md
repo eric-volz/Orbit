@@ -289,6 +289,9 @@ runner with the newest stable Xcode (change `runs-on` when GitHub retires that i
    the commits.
 3. **Runs the unit tests** with `Scripts/swiftpm.sh test --no-parallel`. On the runner's three cores, parallel
    `@MainActor` suites starve one another and tests that wait for a result time out; one after another they pass.
+   The runner uses English (United States) and UTC; [testing.md](testing.md#running-the-unit-tests) shows how to
+   run the tests that way on your Mac. When tests fail, the run's page lists them in an annotation, which unlike
+   the log needs no GitHub login.
 4. **Builds** with `Scripts/build-app.sh release --universal`.
 5. **With the signing secrets:** signs with the Developer ID certificate from a temporary keychain, runs
    `Scripts/notarize.sh` and writes the SHA-256 checksum. The `Orbit.app.dSYM` is kept as a workflow artifact for

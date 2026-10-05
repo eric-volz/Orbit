@@ -62,7 +62,8 @@ struct DisclosureAuditTests {
                                       providerName: "Claude")
             == "1 email and names of 2 mailboxes sent to Claude")
         #expect(DisclosurePhrase.text(for: [ContentDisclosure(kind: .shortcuts, count: 5), ContentDisclosure(kind: .folderNames, count: 1),
-                                            ContentDisclosure(kind: .albumNames, count: 3)], providerName: "Claude")
+                                            ContentDisclosure(kind: .albumNames, count: 3)], providerName: "Claude",
+                                      locale: Locale(identifier: "en_US"))
             == "Names of 5 shortcuts, name of 1 folder, and names of 3 albums sent to Claude")
         #expect(Phrases.reminderListNames(2) == "names of 2 reminder lists" && Phrases.folderNames(3) == "names of 3 folders"
             && Phrases.mailboxNames(1) == "name of 1 mailbox" && Phrases.albumNames(1) == "name of 1 album")

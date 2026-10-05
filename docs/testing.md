@@ -29,6 +29,21 @@ Swift Testing runs the tests in parallel. On a slow machine, such as a GitHub ru
 tests miss their limits. Run them with `--no-parallel` there (the release workflow does); on a recent Mac the
 parallel run takes a few seconds, the serial one about half a minute.
 
+The tests must pass in every language, region and time zone. The GitHub runner uses English (United States) and
+UTC, which a test written on a Mac set to another region may not expect. To run them that way on your Mac:
+
+```sh
+Scripts/swiftpm.sh test --filter NoSuchTest      # builds the tests and runs none
+helper="$(dirname "$(xcrun --find swift)")/../libexec/swift/pm/swiftpm-testing-helper"
+TZ=UTC "$helper" --test-bundle-path .build/debug/OrbitPackageTests.xctest/Contents/MacOS/OrbitPackageTests \
+    --testing-library swift-testing --no-parallel -AppleLocale en_US -AppleLanguages '(en-US)'
+```
+
+`-AppleLocale` and `-AppleLanguages` set the region and the languages of the test process; environment variables
+such as `LANG` do not change them on macOS. Other settings are worth a run, too, for example `en_GB`, or `ja_JP`
+with `TZ=Asia/Tokyo`. One gap is known: three date tests in `ChatLogicTests.swift` and `UIFormattingTests.swift`
+assume the Gregorian calendar and fail in regions whose calendar is another, such as `ar_SA` or `th_TH`.
+
 Always use [`Scripts/swiftpm.sh`](../Scripts/swiftpm.sh): with only the Command Line Tools installed, Swift Testing
 lies outside the default search paths, and the wrapper adds them (see
 [development.md](development.md#the-wrapper-scripts)).
@@ -280,6 +295,10 @@ See [localization.md](localization.md) for the rules behind these checks.
   and is gated with `ORBIT_UI_TESTS`.
 - **Text.** Compare user-visible text against the English text (the catalog key). If you need the German text,
   run the check inside `GermanInterface.run { … }`.
+- **Language, region and time zone.** Formatting without an explicit locale follows the Mac's region (Orbit's
+  `AppLanguage.locale` takes it from macOS), so "2,3 MB", "a, b, and c" or the day of a date hold only on some
+  Macs. Pass a locale (`locale: Locale(identifier: "en_US")`) and a time zone, or check only what holds everywhere,
+  and run the suite [as on the runner](#running-the-unit-tests).
 
 ## Manual acceptance checks
 

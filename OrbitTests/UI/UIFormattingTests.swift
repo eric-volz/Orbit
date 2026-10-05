@@ -113,7 +113,8 @@ struct CardFormattingTests {
             #expect(EventTimeFormatter.string(start: date("2026-10-05"), end: date("2026-10-06"), isAllDay: true,
                                               calendar: germany).hasPrefix("Mo"))
             #expect(PhotoCardFormat.date(date("2026-07-13T18:42"), now: now, calendar: germany).contains("Juli"))
-            #expect(FileCardFormat.size(of: file) == "2,3 MB")
+            // The decimal separator is the region's: "2,3 MB" in Germany, "2.3 MB" in the US.
+            #expect(FileCardFormat.size(of: file) == "2\(AppLanguage.locale.decimalSeparator ?? ".")3 MB")
         }
     }
 
@@ -121,8 +122,10 @@ struct CardFormattingTests {
     @Test func composedTextsFollowTheLocale() {
         let resets = date("2026-10-05T18:00")
         let info = RateLimitInfo(status: "rejected", utilization: 1, resetsAt: resets, window: "five_hour", isUsingOverage: false)
-        #expect(ProviderUsage.resetText(for: info, locale: german)?.contains("5. Okt. 2026") == true)
-        #expect(Self.plain(ProviderUsage.resetDate(resets, locale: Locale(identifier: "en_US"))).contains("Oct 5, 2026"))
+        // The day is the Mac's time zone's (October 6 in Tokyo), so only month and year are checked.
+        #expect(ProviderUsage.resetText(for: info, locale: german)?.contains("Okt. 2026") == true)
+        let english = Self.plain(ProviderUsage.resetDate(resets, locale: Locale(identifier: "en_US")))
+        #expect(english.hasPrefix("Oct ") && english.contains(", 2026"), "\(english)")
         let image = ShortcutOutput.OutputFile(typeIdentifier: "public.png", size: 2_310_000)
         #expect(RunShortcutTool.shownFile(image, locale: german).hasSuffix(", 2,3 MB"))
         #expect(RunShortcutTool.shownFile(image, locale: Locale(identifier: "en_US")).hasSuffix(", 2.3 MB"))

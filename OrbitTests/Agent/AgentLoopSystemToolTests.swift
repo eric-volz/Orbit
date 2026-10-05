@@ -61,7 +61,8 @@ struct AgentLoopSystemToolTests {
             == "Names of 12 shortcuts and output of 1 shortcut sent to Claude")
         #expect(DisclosurePhrase.text(for: [ContentDisclosure(kind: .shortcuts, count: 1),
                                             ContentDisclosure(kind: .shortcutOutputs, count: 2),
-                                            ContentDisclosure(kind: .windowTitles, count: 3)], providerName: "Claude")
+                                            ContentDisclosure(kind: .windowTitles, count: 3)], providerName: "Claude",
+                                      locale: Locale(identifier: "en_US"))
             == "Name of 1 shortcut, output of 2 shortcuts, and 3 window titles sent to Claude")
     }
 

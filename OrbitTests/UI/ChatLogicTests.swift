@@ -23,7 +23,7 @@ struct DisclosurePhraseTests {
             ContentDisclosure(kind: .fileNames, count: 12),
             ContentDisclosure(kind: .emails, count: 1),
         ]
-        #expect(DisclosurePhrase.text(for: items, providerName: "das Sprachmodell")
+        #expect(DisclosurePhrase.text(for: items, providerName: "das Sprachmodell", locale: Locale(identifier: "en_US"))
                 == "12 file names, 3 emails, and 2 notes sent to the language model")
     }
 
@@ -63,7 +63,6 @@ struct DisclosurePhraseTests {
         #expect(Phrases.list([]) == nil)
         #expect(Phrases.list(["a"]) == "a")
         #expect(Phrases.list(["a", "b"]) == "a and b")
-        #expect(Phrases.list(["a", "b", "c"]) == "a, b, and c")
     }
 
     /// Lists follow the locale's rules, not a German pattern.
