@@ -1,0 +1,3 @@
+# Mail fixtures keep their CRLF line endings (the .emlx format of Apple Mail),
+# whatever core.autocrlf says.
+*.emlx -text

@@ -1,0 +1,19 @@
+306
+From: "Beispiel, Lisa" <lb@kanzlei.example>
+To: Erika Mustermann <erika.mustermann@firma.example>
+Subject: Vertragsentwurf
+Date: Thu, 24 Sep 2026 16:20:00 +0200
+Message-ID: <orbit-fake-113@kanzlei.example>
+Content-Type: text/plain; charset=utf-8
+
+Der Vertragsentwurf ist fertig, bitte bis Freitag ansehen.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790259610</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

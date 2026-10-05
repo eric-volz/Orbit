@@ -1,0 +1,12 @@
+{
+  "shortcuts": [
+    {"name": "Fokus: Arbeiten", "folder": "Fokus", "output": "Fokus „Arbeiten“ ist bis 18 Uhr an."},
+    {"name": "Nicht stören an", "folder": "Fokus", "output": "Nicht stören ist an."},
+    {"name": "Nicht stören aus", "folder": "Fokus", "output": "Nicht stören ist aus."},
+    {"name": "Wetter heute", "folder": "Alltag", "output": "Musterstadt: sonnig, 21 °C, am Abend Regen."},
+    {"name": "Text übersetzen", "folder": "Text"},
+    {"name": "Wochenplan als Bild", "folder": "Alltag", "outputType": "image"},
+    {"name": "Lichter aus", "outputType": "none"},
+    {"name": "Kaputter Kurzbefehl", "failure": "Die Aktion „URL abrufen“ konnte nicht ausgeführt werden."}
+  ]
+}

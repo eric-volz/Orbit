@@ -1,0 +1,6 @@
+# Tools for Orbit's documentation site (mkdocs.yml). Pinned so that the site builds
+# the same locally and in .github/workflows/docs.yml; update them together.
+mkdocs==1.6.1
+mkdocs-material==9.7.7
+pymdown-extensions==12.1
+markdown-callouts==0.4.0

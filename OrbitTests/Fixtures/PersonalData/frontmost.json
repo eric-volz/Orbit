@@ -1,0 +1,18 @@
+{
+  "accessibility": "granted",
+  "finderAutomation": "granted",
+  "scene": "finder",
+  "scenes": [
+    {"name": "finder", "app": "Finder", "bundleID": "com.apple.finder", "windowTitle": "Rechnungen",
+     "finderSelection": ["../Files/Rechnungen/Rechnung-Telekom-2026-08.pdf", "../Files/Rechnungen/Vodafone-Invoice-2026-08.pdf"]},
+    {"name": "finder-secrets", "app": "Finder", "bundleID": "com.apple.finder", "windowTitle": "Geheim",
+     "finderSelection": ["../Files/Geheim/server.pem", "../Files/Dokumente/Notizen.md"]},
+    {"name": "textedit", "app": "TextEdit", "bundleID": "com.apple.TextEdit", "windowTitle": "Angebot Gartenhaus.rtf",
+     "selectedText": "Die Lieferung des Gartenhauses erfolgt bis Freitag, 9. Oktober. Bitte bestätigen Sie den Termin bis Mittwoch."},
+    {"name": "password", "app": "Safari", "bundleID": "com.apple.Safari", "windowTitle": "Anmelden: Beispielbank",
+     "selectedText": "erfundenes-Passwort-123", "secureField": true},
+    {"name": "passwords-app", "app": "Passwörter", "bundleID": "com.apple.Passwords", "windowTitle": "Beispielbank",
+     "selectedText": "erfundenes-Passwort-123"},
+    {"name": "calculator", "app": "Rechner", "bundleID": "com.apple.calculator", "windowTitle": "Rechner"}
+  ]
+}

@@ -1,0 +1,20 @@
+348
+From: Erika Mustermann <erika@example.org>
+To: Lisa Beispiel <lisa.beispiel@example.com>
+Subject: =?utf-8?Q?Re:_Projekt_Orbit_=E2=80=93_n=C3=A4chste_Schritte?=
+Date: Wed, 30 Sep 2026 15:10:00 +0200
+Message-ID: <orbit-fake-501@example.org>
+In-Reply-To: <orbit-fake-101@example.com>
+Content-Type: text/plain; charset=utf-8
+
+Donnerstag passt mir gut.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790773810</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

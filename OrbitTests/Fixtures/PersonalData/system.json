@@ -1,0 +1,5 @@
+{
+  "appearance": "light",
+  "automation": "granted",
+  "volume": {"device": "Orbit-Testlautsprecher", "level": 50, "muted": false, "adjustable": true, "canMute": true}
+}

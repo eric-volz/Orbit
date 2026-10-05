@@ -1,0 +1,26 @@
+508
+From: =?utf-8?B?TGlzYSBNdXN0ZXI=?= <lisa.muster@example.net>
+To: erika@example.org
+Subject: =?utf-8?Q?Re:_Grillfest_am_Samstag_?=
+ =?utf-8?Q?=F0=9F=94=A5?=
+Date: Tue, 15 Sep 2026 18:45:00 +0200
+Message-ID: <orbit-fake-105@example.net>
+In-Reply-To: <orbit-fake-099@example.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Klar, ich bringe Salat mit!
+
+> Am 14.09.2026 um 20:00 schrieb Erika Mustermann <erika@example.org>:
+> Wer kommt am Samstag zum Grillfest?
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1789490710</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

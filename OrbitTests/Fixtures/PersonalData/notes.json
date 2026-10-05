@@ -1,0 +1,60 @@
+{
+  "_comment": "Invented notes for Orbit's DEBUG fake-data mode (ORBIT_DEBUG_FAKE_PERSONAL_DATA) and tests. Nothing here is real. Dates are relative to the launch.",
+  "defaultFolder": "Notizen",
+  "folders": ["Notizen", "Rezepte", "Arbeit", "Privat", "Zuletzt gelöscht"],
+  "trashFolder": "Zuletzt gelöscht",
+  "automation": "granted",
+  "notes": [
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p1",
+      "folder": "Notizen",
+      "created": "-20d",
+      "modified": "-2d",
+      "text": "Umzug Checkliste\nKartons bestellen (40 Stück)\nHalteverbot vor der Musterstraße 1 beantragen\nNachsendeauftrag bei der Post\n\nÜbergabe der alten Wohnung: Donnerstag, 14 Uhr"
+    },
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p2",
+      "folder": "Notizen",
+      "created": "-3d",
+      "modified": "-1h",
+      "body": "<div><h1>Einkaufsliste</h1></div><ul><li>Milch</li><li>Eier</li><li>Brot</li><li>Klebeband für die Umzugskartons</li></ul>"
+    },
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p3",
+      "folder": "Rezepte",
+      "created": "-200d",
+      "modified": "-40d",
+      "text": "Apfelkuchen\n500 g Mehl, 250 g Butter, 200 g Zucker\n1 kg Äpfel\n45 Minuten bei 180 °C backen"
+    },
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p4",
+      "folder": "Arbeit",
+      "created": "-10d",
+      "modified": "-5d",
+      "body": "<div><h1>Projekt Orbit: Ideen</h1></div><div>Notizen durchsuchen</div><div>Kontakte auflösen</div><div>Siehe <a href=\"https://example.com/orbit\">Projektseite</a></div>"
+    },
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p5",
+      "name": "Tagebuch",
+      "folder": "Privat",
+      "created": "-100d",
+      "modified": "-6d",
+      "locked": true,
+      "text": "Tagebuch\nDieser Text ist gesperrt und wird nie gelesen."
+    },
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p6",
+      "folder": "Zuletzt gelöscht",
+      "created": "-30d",
+      "modified": "-1d",
+      "text": "Alte Umzug Notiz\nDiese Notiz liegt im Papierkorb und wird nie gefunden."
+    },
+    {
+      "id": "x-coredata://ORBIT-FAKE/ICNote/p7",
+      "folder": "Privat",
+      "created": "-60d",
+      "modified": "-12d",
+      "text": "Packliste Urlaub\n- Reisepass\n- Ladekabel\n- Sonnencreme"
+    }
+  ]
+}

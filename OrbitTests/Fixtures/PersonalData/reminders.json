@@ -1,0 +1,22 @@
+{
+  "_comment": "Invented reminders for Orbit's DEBUG fake-data mode (ORBIT_DEBUG_FAKE_PERSONAL_DATA) and tests. Nothing here is real. 'dueDay'/'completedDay' count from the launch day; see Orbit/App/FakeCalendarData.swift.",
+  "access": "fullAccess",
+  "defaultList": "Erinnerungen",
+  "lists": [
+    {"id": "orbit-fake-list-erinnerungen", "title": "Erinnerungen", "color": "#1BADF8", "account": "iCloud"},
+    {"id": "orbit-fake-list-einkauf", "title": "Einkauf", "color": "#FF9500", "account": "iCloud"},
+    {"id": "orbit-fake-list-haushalt", "title": "Haushalt", "color": "#34C759", "account": "iCloud"}
+  ],
+  "reminders": [
+    {"id": "orbit-fake-reminder-milch", "title": "Milch kaufen", "list": "Einkauf", "dueDay": 0, "dueTime": "18:00", "notes": "fettarm, 1,5 %"},
+    {"id": "orbit-fake-reminder-brot", "title": "Brot", "list": "Einkauf"},
+    {"id": "orbit-fake-reminder-telekom", "title": "Rechnung Telekom bezahlen", "list": "Erinnerungen", "dueDay": -2, "priority": 1},
+    {"id": "orbit-fake-reminder-lisa", "title": "Lisa anrufen", "list": "Erinnerungen", "dueDay": 1, "dueTime": "09:00"},
+    {"id": "orbit-fake-reminder-steuer", "title": "Steuererklärung abgeben", "list": "Erinnerungen", "dueDay": 14,
+     "notes": "Belege liegen im Ordner „Steuer 2025“."},
+    {"id": "orbit-fake-reminder-fenster", "title": "Fenster putzen", "list": "Haushalt", "priority": 9},
+    {"id": "orbit-fake-reminder-paket", "title": "Paket abholen", "list": "Erinnerungen", "dueDay": -1, "completed": true,
+     "completedDay": -1, "completedTime": "17:30"},
+    {"id": "orbit-fake-reminder-altglas", "title": "Altglas wegbringen", "list": "Haushalt", "completed": true, "completedDay": -40}
+  ]
+}

@@ -1,0 +1,21 @@
+336
+From: Vodafone <rechnung@vodafone.example>
+To: erika@example.org
+Subject: Ihre Rechnung August 2026
+Date: Wed, 12 Aug 2026 06:00:00 +0200
+Message-ID: <orbit-fake-201@vodafone.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Ihre Rechnung für August 2026 über 29,99 € steht bereit.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1786507210</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

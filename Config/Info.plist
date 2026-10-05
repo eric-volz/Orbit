@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>de</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>Orbit</string>
+	<key>CFBundleExecutable</key>
+	<string>Orbit</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(ORBIT_BUNDLE_ID)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Orbit</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(ORBIT_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(ORBIT_BUILD)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2026 The Orbit Authors. MIT License.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSSupportsAutomaticTermination</key>
+	<false/>
+	<key>NSSupportsSuddenTermination</key>
+	<false/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Orbit controls Mail, Notes, Photos, Finder and System Events to carry out your requests, for example to search your mail, open a draft, show a photo in Photos, use the selection in Finder or turn on Dark Mode.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Orbit searches your contacts to resolve names to email addresses and to show contacts in search results.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Orbit shows your events and creates new events after you confirm.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Orbit shows your events and creates new events after you confirm.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Orbit shows your reminders and creates new reminders after you confirm.</string>
+	<key>NSRemindersFullAccessUsageDescription</key>
+	<string>Orbit shows your reminders and creates new reminders after you confirm.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Orbit finds photos by date, album and favorites and shows them as previews.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>Orbit searches your Desktop folder so matching files appear as you type, and reads files when you ask for them.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Orbit searches your Documents folder so matching files appear as you type, and reads files when you ask for them.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>Orbit searches your Downloads folder so matching files appear as you type, and reads files when you ask for them.</string>
+</dict>
+</plist>

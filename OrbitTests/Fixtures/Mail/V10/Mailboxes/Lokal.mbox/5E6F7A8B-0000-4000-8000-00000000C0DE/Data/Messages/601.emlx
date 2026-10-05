@@ -1,0 +1,19 @@
+237
+From: Oma <oma@example.net>
+To: erika@example.org
+Subject: Rezept Apfelkuchen
+Date: Wed, 01 Jul 2026 09:00:00 +0200
+Message-ID: <orbit-fake-601@example.net>
+Content-Type: text/plain; charset=utf-8
+
+500 g Mehl, 250 g Butter, 1 kg Äpfel.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1782889210</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,23 @@
+514
+From: Beispiel Shop <news@shop.example>
+To: erika@example.org
+Subject: =?iso-8859-1?Q?Herbst-Angebote_f=FCr_Sie?=
+Date: Sun, 20 Sep 2026 09:00:00 +0200
+Message-ID: <orbit-fake-103@shop.example>
+MIME-Version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><style>p { color: red; }</style></head><body><h1>Herbst-Angebote</h1>=
+<p>Gro=DFe Auswahl an Jacken &amp; M=E4nteln.</p><p><a href=3D"https://shop.exa=
+mple/herbst">Jetzt ansehen</a></p></body></html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1789887610</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

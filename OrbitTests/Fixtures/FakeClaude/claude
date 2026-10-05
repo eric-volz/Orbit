@@ -1,0 +1,381 @@
+#!/bin/bash
+# Fake `claude` for Orbit's tests. Emulates the parts of the Claude Code CLI that
+# Orbit uses: `--version`, `auth status --json`, `auth login` and a streaming
+# chat process (`-p --input-format stream-json --output-format stream-json`),
+# including tool calls through Orbit's MCP bridge (curl). Never contacts Anthropic.
+# Compatible with /bin/bash 3.2.
+#
+# Controlled by environment variables (ClaudeCodeRuntime.Configuration.extraEnvironment):
+#   FAKE_CLAUDE_LOG_DIR   where to record the invocation: args-<pid>.txt, env-<pid>.txt,
+#                         cwd-<pid>.txt, stdin-<pid>.jsonl, mcp-<pid>.log, mcp-config-<pid>.json,
+#                         system-prompt-<pid>.txt, login-args-<pid>.txt
+#   FAKE_CLAUDE_SCENARIO  text (default) | echo | tool | slow | slow_then_echo | ignore_interrupt | interrupt_error |
+#                         not_logged_in | usage_limit | usage_limit_legacy | network_error | model_not_found | crash |
+#                         exit_on_start | no_stream | refusal | noise | stale_result | control_request
+#   FAKE_CLAUDE_AUTH      logged_in (default) | logged_out | garbage
+#   FAKE_CLAUDE_LOGIN     success (default) | fail | hang
+set -u
+
+LOG_DIR="${FAKE_CLAUDE_LOG_DIR:-}"
+SCENARIO="${FAKE_CLAUDE_SCENARIO:-text}"
+PID=$$
+MODEL="claude-fake-1"
+
+record() { # line, file prefix
+  if [ -n "$LOG_DIR" ]; then printf '%s\n' "$1" >> "$LOG_DIR/$2-$PID.log"; fi
+}
+
+json_escape() {
+  local s="$1"
+  s="${s//\\/\\\\}"
+  s="${s//\"/\\\"}"
+  s="${s//$'\n'/\\n}"
+  s="${s//$'\r'/\\r}"
+  s="${s//$'\t'/\\t}"
+  printf '%s' "$s"
+}
+
+emit() { printf '%s\n' "$1"; }
+
+# ---------------------------------------------------------------------------
+# Plain commands
+# ---------------------------------------------------------------------------
+case "${1:-}" in
+  --version|-v)
+    echo "2.1.999 (Claude Code)"
+    exit 0
+    ;;
+  auth)
+    case "${2:-}" in
+      status)
+        case "${FAKE_CLAUDE_AUTH:-logged_in}" in
+          logged_in)
+            emit '{"loggedIn":true,"authMethod":"claude.ai","apiProvider":"firstParty","email":"person@example.com","orgId":"org-123","orgName":"Example Org","subscriptionType":"max"}'
+            exit 0 ;;
+          logged_out)
+            emit '{"loggedIn":false,"authMethod":"none","apiProvider":"firstParty"}'
+            exit 1 ;;
+          *)
+            echo "Something went wrong"
+            exit 2 ;;
+        esac
+        ;;
+      login)
+        if [ -n "$LOG_DIR" ]; then printf '%s\n' "$@" > "$LOG_DIR/login-args-$PID.txt"; fi
+        case "${FAKE_CLAUDE_LOGIN:-success}" in
+          success)
+            echo "Opening browser to sign in…"
+            sleep 0.2
+            echo "Login successful."
+            exit 0 ;;
+          fail)
+            echo "Login failed: access denied" >&2
+            exit 1 ;;
+          *)
+            sleep 60
+            exit 0 ;;
+        esac
+        ;;
+    esac
+    echo "error: unknown auth command" >&2
+    exit 64
+    ;;
+esac
+
+# ---------------------------------------------------------------------------
+# Streaming chat process
+# ---------------------------------------------------------------------------
+TMPD="$(mktemp -d "${TMPDIR:-/tmp}/fake-claude.XXXXXX")"
+STREAM_PID=""
+CURRENT_UUID=""
+TURN=0
+
+cleanup() {
+  if [ -n "$STREAM_PID" ]; then kill "$STREAM_PID" 2>/dev/null; fi
+  rm -rf "$TMPD"
+}
+trap cleanup EXIT
+
+if [ -n "$LOG_DIR" ]; then
+  printf '%s\n' "$@" > "$LOG_DIR/args-$PID.txt"
+  env | sort > "$LOG_DIR/env-$PID.txt"
+  pwd -P > "$LOG_DIR/cwd-$PID.txt"
+fi
+
+MCP_FILE=""
+SYSTEM_PROMPT_FILE=""
+previous=""
+for argument in "$@"; do
+  case "$previous" in
+    --mcp-config) MCP_FILE="$argument" ;;
+    --system-prompt-file) SYSTEM_PROMPT_FILE="$argument" ;;
+  esac
+  previous="$argument"
+done
+
+if [ "$SCENARIO" = "exit_on_start" ]; then
+  echo "error: unknown option '--disable-slash-commands'" >&2
+  exit 1
+fi
+if [ -z "$SYSTEM_PROMPT_FILE" ] || [ ! -f "$SYSTEM_PROMPT_FILE" ]; then
+  echo "Error: System prompt file not found: $SYSTEM_PROMPT_FILE" >&2
+  exit 1
+fi
+if [ -n "$LOG_DIR" ]; then cp "$SYSTEM_PROMPT_FILE" "$LOG_DIR/system-prompt-$PID.txt"; fi
+
+# Connect to the MCP bridge at startup, as the real CLI does.
+MCP_URL=""
+MCP_AUTH=""
+MCP_STATUS=""
+TOOLS_JSON="[]"
+mcp_post() { # body, name; response in $TMPD/<name>.json, HTTP status in $LAST_STATUS
+  LAST_STATUS=$(curl -s --noproxy '*' --max-time 120 -o "$TMPD/$2.json" -w '%{http_code}' -X POST "$MCP_URL" \
+    -H "Authorization: $MCP_AUTH" -H 'Content-Type: application/json' \
+    -H 'Accept: application/json, text/event-stream' -H 'MCP-Protocol-Version: 2025-11-25' \
+    --data-binary "$1")
+  record "$2 $LAST_STATUS" mcp
+}
+if [ -n "$MCP_FILE" ]; then
+  if [ -n "$LOG_DIR" ]; then cp "$MCP_FILE" "$LOG_DIR/mcp-config-$PID.json"; fi
+  MCP_URL=$(plutil -extract mcpServers.orbit.url raw -o - "$MCP_FILE" 2>/dev/null)
+  MCP_AUTH=$(plutil -extract mcpServers.orbit.headers.Authorization raw -o - "$MCP_FILE" 2>/dev/null)
+  mcp_post '{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"fake-claude","version":"0"}}}' initialize
+  if [ "$LAST_STATUS" = "200" ]; then MCP_STATUS="connected"; else MCP_STATUS="failed"; fi
+  record "protocol $(plutil -extract result.protocolVersion raw -o - "$TMPD/initialize.json" 2>/dev/null)" mcp
+  mcp_post '{"jsonrpc":"2.0","method":"notifications/initialized"}' initialized
+  GET_STATUS=$(curl -s --noproxy '*' --max-time 10 -o /dev/null -w '%{http_code}' "$MCP_URL" \
+    -H "Authorization: $MCP_AUTH" -H 'Accept: text/event-stream')
+  record "get $GET_STATUS" mcp
+  mcp_post '{"jsonrpc":"2.0","id":1,"method":"tools/list"}' tools
+  count=$(plutil -extract result.tools raw -o - "$TMPD/tools.json" 2>/dev/null || echo 0)
+  names=""
+  i=0
+  while [ "$i" -lt "$count" ]; do
+    name=$(plutil -extract "result.tools.$i.name" raw -o - "$TMPD/tools.json")
+    names="$names${names:+,}\"mcp__orbit__$name\""
+    i=$((i + 1))
+  done
+  TOOLS_JSON="[$names]"
+  record "tools $count" mcp
+fi
+
+# --- Output helpers ---------------------------------------------------------
+
+emit_init() {
+  local servers="[]"
+  if [ -n "$MCP_URL" ]; then servers="[{\"name\":\"orbit\",\"status\":\"$MCP_STATUS\"}]"; fi
+  emit "{\"type\":\"system\",\"subtype\":\"init\",\"cwd\":\"$(json_escape "$PWD")\",\"session_id\":\"fake-session\",\"tools\":$TOOLS_JSON,\"mcp_servers\":$servers,\"model\":\"$MODEL\",\"permissionMode\":\"default\",\"slash_commands\":[],\"skills\":[],\"agents\":[],\"apiKeySource\":\"none\",\"claude_code_version\":\"2.1.999\",\"capabilities\":[\"interrupt_receipt_v1\"],\"memory_paths\":null}"
+}
+
+stream_event() { # event JSON
+  emit "{\"type\":\"stream_event\",\"event\":$1,\"parent_tool_use_id\":null,\"session_id\":\"fake-session\"}"
+}
+
+message_start() { # message id
+  stream_event "{\"type\":\"message_start\",\"message\":{\"model\":\"$MODEL\",\"id\":\"$1\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"usage\":{\"input_tokens\":10,\"output_tokens\":1}}}"
+}
+
+text_block() { # message id, index, first part, second part
+  local full="$3$4"
+  stream_event "{\"type\":\"content_block_start\",\"index\":$2,\"content_block\":{\"type\":\"text\",\"text\":\"\"}}"
+  stream_event "{\"type\":\"content_block_delta\",\"index\":$2,\"delta\":{\"type\":\"text_delta\",\"text\":\"$(json_escape "$3")\"}}"
+  if [ -n "$4" ]; then
+    stream_event "{\"type\":\"content_block_delta\",\"index\":$2,\"delta\":{\"type\":\"text_delta\",\"text\":\"$(json_escape "$4")\"}}"
+  fi
+  emit "{\"type\":\"assistant\",\"message\":{\"model\":\"$MODEL\",\"id\":\"$1\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"$(json_escape "$full")\"}]},\"parent_tool_use_id\":null,\"session_id\":\"fake-session\"}"
+  stream_event "{\"type\":\"content_block_stop\",\"index\":$2}"
+}
+
+message_end() { # stop reason [, stop details JSON]
+  stream_event "{\"type\":\"message_delta\",\"delta\":{\"stop_reason\":\"$1\",\"stop_sequence\":null,\"stop_details\":${2:-null}},\"usage\":{\"output_tokens\":5}}"
+  stream_event '{"type":"message_stop"}'
+}
+
+result_success() { # uuid, text, stop reason
+  emit "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"duration_ms\":5,\"duration_api_ms\":4,\"num_turns\":1,\"result\":\"$(json_escape "$2")\",\"stop_reason\":\"${3:-end_turn}\",\"session_id\":\"fake-session\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":12,\"cache_creation_input_tokens\":2,\"cache_read_input_tokens\":3,\"output_tokens\":7},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"user_message_uuid\":\"$1\",\"uuid\":\"result-$TURN\"}"
+}
+
+synthetic_error() { # text, api error status (or null)
+  emit "{\"type\":\"assistant\",\"message\":{\"model\":\"<synthetic>\",\"id\":\"msg_error_$TURN\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"$(json_escape "$1")\"}]},\"parent_tool_use_id\":null,\"session_id\":\"fake-session\",\"is_api_error_message\":true,\"api_error_status\":$2}"
+}
+
+result_error() { # uuid, text, api error status (or null), subtype, terminal reason
+  emit "{\"type\":\"result\",\"subtype\":\"$4\",\"is_error\":true,\"duration_ms\":5,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"$(json_escape "$2")\",\"stop_reason\":null,\"session_id\":\"fake-session\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"output_tokens\":0},\"permission_denials\":[],\"api_error_status\":$3,\"terminal_reason\":\"$5\",\"errors\":[],\"user_message_uuid\":\"$1\",\"uuid\":\"result-$TURN\"}"
+}
+
+# --- Turns ------------------------------------------------------------------
+
+run_turn() { # uuid, block count, first text, last text
+  local uuid="$1" blocks="$2" first="$3" last="$4"
+  local scenario="$SCENARIO"
+  if [ "$SCENARIO" = "slow_then_echo" ]; then
+    if [ "$TURN" -eq 1 ]; then scenario="slow"; else scenario="echo"; fi
+  fi
+  emit_init
+  case "$scenario" in
+    text|noise)
+      message_start "msg_$TURN"
+      text_block "msg_$TURN" 0 "Hallo" " Welt"
+      message_end end_turn
+      result_success "$uuid" "Hallo Welt"
+      ;;
+    echo)
+      local transcript="no"
+      case "$first" in *"<previous_conversation>"*) transcript="yes" ;; esac
+      local text="turn $TURN pid $PID blocks $blocks transcript $transcript: $last"
+      message_start "msg_$TURN"
+      text_block "msg_$TURN" 0 "turn $TURN " "pid $PID blocks $blocks transcript $transcript: $last"
+      message_end end_turn
+      result_success "$uuid" "$text"
+      ;;
+    tool)
+      local call_id="toolu_fake_$TURN"
+      message_start "msg_${TURN}_a"
+      text_block "msg_${TURN}_a" 0 "Ich schaue nach." ""
+      stream_event "{\"type\":\"content_block_start\",\"index\":1,\"content_block\":{\"type\":\"tool_use\",\"id\":\"$call_id\",\"name\":\"mcp__orbit__get_test_value\",\"input\":{}}}"
+      stream_event "{\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"{\\\"label\\\":\\\"fake\\\"}\"}}"
+      emit "{\"type\":\"assistant\",\"message\":{\"model\":\"$MODEL\",\"id\":\"msg_${TURN}_a\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"tool_use\",\"id\":\"$call_id\",\"name\":\"mcp__orbit__get_test_value\",\"input\":{\"label\":\"fake\"}}]},\"parent_tool_use_id\":null,\"session_id\":\"fake-session\"}"
+      stream_event '{"type":"content_block_stop","index":1}'
+      message_end tool_use
+      mcp_post "{\"jsonrpc\":\"2.0\",\"id\":$((TURN + 1)),\"method\":\"tools/call\",\"params\":{\"name\":\"get_test_value\",\"arguments\":{\"label\":\"fake\"},\"_meta\":{\"claudecode/toolUseId\":\"$call_id\",\"progressToken\":2}}}" "call-$TURN"
+      local value is_error
+      value=$(plutil -extract result.content.0.text raw -o - "$TMPD/call-$TURN.json" 2>/dev/null)
+      is_error=$(plutil -extract result.isError raw -o - "$TMPD/call-$TURN.json" 2>/dev/null)
+      record "result $TURN $is_error $value" mcp
+      emit "{\"type\":\"user\",\"message\":{\"role\":\"user\",\"content\":[{\"tool_use_id\":\"$call_id\",\"type\":\"tool_result\",\"content\":[{\"type\":\"text\",\"text\":\"$(json_escape "$value")\"}],\"is_error\":$is_error}]},\"parent_tool_use_id\":null,\"session_id\":\"fake-session\"}"
+      message_start "msg_${TURN}_b"
+      text_block "msg_${TURN}_b" 0 "Das Werkzeug sagt: " "$value"
+      message_end end_turn
+      result_success "$uuid" "Das Werkzeug sagt: $value"
+      ;;
+    slow|ignore_interrupt|interrupt_error)
+      message_start "msg_$TURN"
+      stream_event '{"type":"content_block_start","index":0,"content_block":{"type":"text","text":""}}'
+      local i=1
+      while [ "$i" -le 200 ]; do
+        stream_event "{\"type\":\"content_block_delta\",\"index\":0,\"delta\":{\"type\":\"text_delta\",\"text\":\"tick $i \"}}"
+        sleep 0.05
+        i=$((i + 1))
+      done
+      stream_event '{"type":"content_block_stop","index":0}'
+      message_end end_turn
+      result_success "$uuid" "ticks"
+      ;;
+    not_logged_in)
+      synthetic_error "Not logged in · Please run /login" null
+      result_error "$uuid" "Not logged in · Please run /login" null success completed
+      ;;
+    usage_limit)
+      emit '{"type":"rate_limit_event","rate_limit_info":{"status":"rejected","resetsAt":1790700000,"rateLimitType":"five_hour","utilization":1.0,"isUsingOverage":false},"session_id":"fake-session"}'
+      synthetic_error "You've hit your limit · resets 3pm (Europe/Berlin)" 429
+      result_error "$uuid" "You've hit your limit · resets 3pm (Europe/Berlin)" 429 success completed
+      ;;
+    usage_limit_legacy)
+      synthetic_error "Claude AI usage limit reached|1790700000" null
+      result_error "$uuid" "Claude AI usage limit reached|1790700000" null success completed
+      ;;
+    network_error)
+      synthetic_error "API Error: Connection error." null
+      result_error "$uuid" "API Error: Connection error." null success api_error
+      ;;
+    model_not_found)
+      synthetic_error "API Error: 404 model: claude-nope not_found_error" 404
+      result_error "$uuid" "API Error: 404 model: claude-nope not_found_error" 404 success completed
+      ;;
+    crash)
+      message_start "msg_$TURN"
+      stream_event '{"type":"content_block_start","index":0,"content_block":{"type":"text","text":""}}'
+      stream_event '{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"partial"}}'
+      echo "fatal: the fake crashed" >&2
+      kill -9 "$PID"
+      ;;
+    no_stream)
+      emit "{\"type\":\"assistant\",\"message\":{\"model\":\"$MODEL\",\"id\":\"msg_ns_$TURN\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[{\"type\":\"thinking\",\"thinking\":\"hmm\",\"signature\":\"sig\"},{\"type\":\"text\",\"text\":\"Ohne Streaming\"}]},\"parent_tool_use_id\":null,\"session_id\":\"fake-session\"}"
+      result_success "$uuid" "Ohne Streaming"
+      ;;
+    refusal)
+      message_start "msg_$TURN"
+      text_block "msg_$TURN" 0 "I can" ""
+      message_end refusal '{"category":"cyber"}'
+      result_success "$uuid" "I can" refusal
+      ;;
+    stale_result)
+      result_success "00000000-0000-0000-0000-000000000000" "stale"
+      message_start "msg_$TURN"
+      text_block "msg_$TURN" 0 "Frisch" ""
+      message_end end_turn
+      result_success "$uuid" "Frisch"
+      ;;
+    control_request)
+      emit '{"type":"control_request","request_id":"cli-req-1","request":{"subtype":"can_use_tool","tool_name":"Bash","input":{}}}'
+      sleep 0.2
+      message_start "msg_$TURN"
+      text_block "msg_$TURN" 0 "Weiter" ""
+      message_end end_turn
+      result_success "$uuid" "Weiter"
+      ;;
+  esac
+}
+
+stream_running() {
+  [ -n "$STREAM_PID" ] && kill -0 "$STREAM_PID" 2>/dev/null
+}
+
+handle_control() { # line
+  printf '%s\n' "$1" > "$TMPD/control.json"
+  local request_id subtype
+  request_id=$(plutil -extract request_id raw -o - "$TMPD/control.json" 2>/dev/null)
+  subtype=$(plutil -extract request.subtype raw -o - "$TMPD/control.json" 2>/dev/null)
+  [ "$subtype" = "interrupt" ] || return
+  case "$SCENARIO" in
+    ignore_interrupt) return ;;
+    interrupt_error)
+      emit "{\"type\":\"control_response\",\"response\":{\"subtype\":\"error\",\"request_id\":\"$request_id\",\"error\":\"interrupt not supported\"}}"
+      return ;;
+  esac
+  local was_running="no"
+  if stream_running; then
+    was_running="yes"
+    pkill -P "$STREAM_PID" 2>/dev/null
+    kill "$STREAM_PID" 2>/dev/null
+    wait "$STREAM_PID" 2>/dev/null
+  fi
+  STREAM_PID=""
+  emit "{\"type\":\"control_response\",\"response\":{\"subtype\":\"success\",\"request_id\":\"$request_id\",\"response\":{\"still_queued\":[]}}}"
+  if [ "$was_running" = "yes" ]; then
+    emit '{"type":"user","message":{"role":"user","content":[{"type":"text","text":"[Request interrupted by user]"}]},"parent_tool_use_id":null,"session_id":"fake-session"}'
+    result_error "$CURRENT_UUID" "" null error_during_execution aborted_streaming
+  fi
+  record "interrupted $was_running" events
+}
+
+if [ "$SCENARIO" = "noise" ]; then
+  echo "this line is not JSON"
+  echo ""
+fi
+
+while IFS= read -r line; do
+  if [ -n "$LOG_DIR" ]; then printf '%s\n' "$line" >> "$LOG_DIR/stdin-$PID.jsonl"; fi
+  case "$line" in
+    *'"type":"control_request"'*)
+      handle_control "$line"
+      ;;
+    *'"type":"control_response"'*)
+      record "control response received" events
+      ;;
+    *'"type":"user"'*)
+      if stream_running; then wait "$STREAM_PID" 2>/dev/null; fi
+      TURN=$((TURN + 1))
+      printf '%s\n' "$line" > "$TMPD/message.json"
+      CURRENT_UUID=$(plutil -extract uuid raw -o - "$TMPD/message.json" 2>/dev/null)
+      blocks=$(plutil -extract message.content raw -o - "$TMPD/message.json" 2>/dev/null || echo 0)
+      first=$(plutil -extract message.content.0.text raw -o - "$TMPD/message.json" 2>/dev/null)
+      last=$(plutil -extract "message.content.$((blocks - 1)).text" raw -o - "$TMPD/message.json" 2>/dev/null)
+      run_turn "$CURRENT_UUID" "$blocks" "$first" "$last" &
+      STREAM_PID=$!
+      ;;
+  esac
+done
+
+if stream_running; then wait "$STREAM_PID" 2>/dev/null; fi
+exit 0

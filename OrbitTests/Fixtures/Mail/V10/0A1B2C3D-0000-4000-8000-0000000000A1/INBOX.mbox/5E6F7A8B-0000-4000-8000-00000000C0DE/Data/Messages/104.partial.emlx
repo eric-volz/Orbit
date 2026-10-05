@@ -1,0 +1,33 @@
+692
+From: Max Mustermann <max@example.com>
+To: Erika Mustermann <erika@example.org>
+Subject: Fotos vom Wochenende
+Date: Mon, 28 Sep 2026 19:30:00 +0200
+Message-ID: <orbit-fake-104@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=orbit-mixed-104
+
+--orbit-mixed-104
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Hi Erika,
+anbei ein Foto vom Ausflug an den See.
+Max
+--orbit-mixed-104
+Content-Type: image/png; name="see.png"
+Content-Disposition: attachment; filename="see.png"
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==
+--orbit-mixed-104--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790616610</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

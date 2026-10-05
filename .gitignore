@@ -1,0 +1,15 @@
+.build/
+build/
+dist/
+*.xcodeproj/xcuserdata/
+.swiftpm/
+DerivedData/
+.DS_Store
+*.dSYM
+*.dSYM.zip
+.claude/
+
+# Documentation site (mkdocs.yml): build output and local tools
+site/
+.venv-docs/
+__pycache__/

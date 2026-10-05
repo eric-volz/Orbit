@@ -1,0 +1,41 @@
+{
+  "_comment": "Invented contacts for Orbit's DEBUG fake-data mode (ORBIT_DEBUG_FAKE_PERSONAL_DATA) and tests. Nothing here is real (example.com/.org/.net addresses, 0000 numbers).",
+  "access": "authorized",
+  "contacts": [
+    {
+      "id": "orbit-fake-lisa-beispiel",
+      "name": "Lisa Beispiel",
+      "organization": "Beispiel GmbH",
+      "emails": [{"label": "Arbeit", "value": "lisa.beispiel@example.com"}, {"label": "Privat", "value": "lisa@example.org"}],
+      "phones": [{"label": "Mobil", "value": "+49 170 0000001"}]
+    },
+    {
+      "id": "orbit-fake-lisa-muster",
+      "name": "Lisa Muster",
+      "emails": [{"label": "Privat", "value": "lisa.muster@example.net"}]
+    },
+    {
+      "id": "orbit-fake-max",
+      "name": "Max Mustermann",
+      "emails": [{"value": "max@example.com"}],
+      "phones": [{"label": "Arbeit", "value": "030 0000 0002"}]
+    },
+    {
+      "id": "orbit-fake-erika",
+      "name": "Erika Mustermann",
+      "emails": [{"label": "Privat", "value": "erika@example.org"}],
+      "isMe": true
+    },
+    {
+      "id": "orbit-fake-jonas",
+      "name": "Jonas Ohnemail",
+      "phones": [{"label": "Mobil", "value": "0151 0000003"}]
+    },
+    {
+      "id": "orbit-fake-firma",
+      "name": "Beispiel Handwerk",
+      "organization": "Beispiel Handwerk",
+      "emails": [{"label": "Arbeit", "value": "info@example.com"}]
+    }
+  ]
+}

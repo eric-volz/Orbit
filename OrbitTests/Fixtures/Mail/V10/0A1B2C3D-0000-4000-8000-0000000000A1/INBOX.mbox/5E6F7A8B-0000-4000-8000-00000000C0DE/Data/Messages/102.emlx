@@ -1,0 +1,35 @@
+865
+From: "Telekom Deutschland" <rechnung@telekom.example>
+To: erika@example.org
+Subject: Ihre Rechnung September 2026
+Date: Thu, 01 Oct 2026 07:15:00 +0000
+Message-ID: <orbit-fake-102@telekom.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="orbit-alt-102"
+
+This is a multi-part message in MIME format.
+
+--orbit-alt-102
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+R3V0ZW4gVGFnIEVyaWthIE11c3Rlcm1hbm4sCgpJaHJlIFJlY2hudW5nIGbDvHIgU2VwdGVtYmVy
+IDIwMjYgaXN0IGRhLiBCZXRyYWc6IDM5LDk1IOKCrC4KCklocmUgVGVsZWtvbQo=
+--orbit-alt-102
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PHA+R3V0ZW4gVGFnIEVyaWthIE11c3Rlcm1hbm4sPC9wPjxwPklocmUgPGI+
+UmVjaG51bmc8L2I+IGYmdXVtbDtyIFNlcHRlbWJlciAyMDI2IGlzdCBkYS4gQmV0cmFnOiAzOSw5
+NSZuYnNwOyZldXJvOy48L3A+PC9ib2R5PjwvaHRtbD4=
+--orbit-alt-102--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790838910</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,140 @@
+# Orbit's documentation site, built from docs/ with MkDocs and Material for MkDocs
+# and published on GitHub Pages by .github/workflows/docs.yml.
+#
+# Preview it locally (see docs/development.md, "Documentation site"):
+#   python3 -m venv .venv-docs && .venv-docs/bin/pip install -r docs/.site/requirements.txt
+#   .venv-docs/bin/mkdocs serve            # http://127.0.0.1:8000/Orbit/
+#
+# The Markdown in docs/ is written for GitHub first: links to source files and to
+# the repository root are rewritten by docs/.site/hooks.py, GitHub's "> [!NOTE]"
+# boxes come from markdown-callouts, and anchors use GitHub's slug rules.
+
+site_name: Orbit
+site_description: >-
+  A native macOS launcher with a built-in AI assistant that works with your files,
+  Mail, Notes, Calendar, Reminders, Photos and Shortcuts, and asks before it acts.
+site_author: The Orbit Authors
+copyright: Copyright © 2026 The Orbit Authors · MIT License
+
+# The workflow sets these from the repository it runs in; the defaults are the published values.
+site_url: !ENV [SITE_URL, "https://eric-volz.github.io/Orbit/"]
+repo_url: !ENV [REPO_URL, "https://github.com/eric-volz/Orbit"]
+repo_name: !ENV [REPO_NAME, "eric-volz/Orbit"]
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+# Pages become user-guide.html next to assets/, so the HTML <img> tags in the
+# Markdown keep working with their relative paths.
+use_directory_urls: false
+
+hooks:
+  - docs/.site/hooks.py
+
+theme:
+  name: material
+  custom_dir: docs/.site/overrides
+  language: en
+  logo: assets/icon/orbit-icon-128.png
+  favicon: assets/icon/orbit-icon-64.png
+  font: false # system fonts, no requests to Google Fonts
+  icon:
+    repo: fontawesome/brands/github
+    admonition: # the symbols GitHub uses for its "> [!NOTE]" boxes
+      note: octicons/info-16
+      tip: octicons/light-bulb-16
+      important: octicons/report-16
+      warning: octicons/alert-16
+      danger: octicons/stop-16
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Follow the system setting
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+extra_css:
+  - assets/stylesheets/orbit.css
+
+# The docs workflow adds a pinned Mermaid at this path to the built site, so readers'
+# browsers make no requests to a CDN. Without the file (a local preview), Material
+# loads Mermaid from unpkg instead.
+extra_javascript:
+  - assets/javascripts/mermaid.min.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - github-callouts
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+nav:
+  - Home: README.md
+  - Using Orbit:
+      - getting-started.md
+      - user-guide.md
+      - keyboard-shortcuts.md
+      - providers.md
+      - tools.md
+      - permissions.md
+      - privacy.md
+      - accessibility.md
+      - troubleshooting.md
+      - known-limitations.md
+  - Contributing:
+      - architecture.md
+      - agent.md
+      - llm-providers.md
+      - security-model.md
+      - development.md
+      - testing.md
+      - manual-qa.md
+      - localization.md
+      - releasing.md
+      - performance.md

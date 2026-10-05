@@ -1,0 +1,67 @@
+/* Orbit's colors for the documentation site (Material for MkDocs): the purple
+   of the app icon, its orange planet and its blue satellite. */
+
+:root {
+  --md-primary-fg-color: #3b2f9e;
+  --md-primary-fg-color--light: #6c5ce7;
+  --md-primary-fg-color--dark: #1e1b4b;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+  --md-accent-fg-color: #f97316;
+  --md-accent-fg-color--transparent: rgba(249, 115, 22, 0.1);
+  --md-footer-bg-color: #14123a;
+  --md-footer-bg-color--dark: #0d0c2a;
+}
+
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #5b4bd6;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 245;
+  --md-typeset-a-color: #a5b4fc;
+  --md-accent-fg-color: #fdba74;
+  --md-accent-fg-color--transparent: rgba(253, 186, 116, 0.12);
+}
+
+/* The header in the icon's gradient. */
+.md-header {
+  background: linear-gradient(100deg, #6c5ce7 0%, #3b2f9e 45%, #0f1640 100%);
+}
+
+.md-header__button.md-logo img {
+  height: 1.6rem;
+}
+
+/* Screenshots get rounded corners and a soft shadow, like Orbit's panel. */
+.md-typeset img[src*="screenshots/"] {
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(15, 22, 64, 0.18);
+}
+
+[data-md-color-scheme="slate"] .md-typeset img[src*="screenshots/"] {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* GitHub's "> [!IMPORTANT]" box, a type Material has no style for. */
+.md-typeset .admonition.important,
+.md-typeset details.important {
+  border-color: #8250df;
+}
+
+.md-typeset .important > .admonition-title,
+.md-typeset .important > summary {
+  background-color: rgba(130, 80, 223, 0.1);
+}
+
+.md-typeset .important > .admonition-title::before,
+.md-typeset .important > summary::before {
+  background-color: #8250df;
+  -webkit-mask-image: var(--md-admonition-icon--important);
+  mask-image: var(--md-admonition-icon--important);
+}
+
+/* Reference tables use a slightly smaller font, so more columns fit. */
+.md-typeset table:not([class]) {
+  font-size: 0.74rem;
+}

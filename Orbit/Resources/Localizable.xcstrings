@@ -1,0 +1,6803 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "“%@” could not be opened." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ konnte nicht geöffnet werden."
+          }
+        }
+      }
+    },
+    "“%@” was not found. It may have been moved or deleted." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ wurde nicht gefunden. Vielleicht wurde es verschoben oder gelöscht."
+          }
+        }
+      }
+    },
+    "(No Subject)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Kein Betreff)"
+          }
+        }
+      }
+    },
+    "%@ · all day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · ganztägig"
+          }
+        }
+      }
+    },
+    "%@ (default)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (Standard)"
+          }
+        }
+      }
+    },
+    "%@ from the Claude app" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ aus der Claude-App"
+          }
+        }
+      }
+    },
+    "%1$@ sent to %2$@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ an %2$@ gesendet"
+          }
+        }
+      }
+    },
+    "%1$@ to %2$@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ bis %2$@"
+          }
+        }
+      }
+    },
+    "%1$@, %2$@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, %2$@"
+          }
+        }
+      }
+    },
+    "%1$@, step %2$lld of %3$lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@, Schritt %2$lld von %3$lld"
+          }
+        }
+      }
+    },
+    "%1$@: %2$@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@: %2$@"
+          }
+        }
+      }
+    },
+    "%1$lld%% used (%2$@)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld %% genutzt (%2$@)"
+          }
+        }
+      }
+    },
+    "%lld contacts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Kontakte"
+          }
+        }
+      }
+    },
+    "%lld emails" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld E-Mails"
+          }
+        }
+      }
+    },
+    "%lld events" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Termine"
+          }
+        }
+      }
+    },
+    "%lld file names" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Dateinamen"
+          }
+        }
+      }
+    },
+    "%lld files" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Dateien"
+          }
+        }
+      }
+    },
+    "%lld notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Notizen"
+          }
+        }
+      }
+    },
+    "%lld photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Fotos"
+          }
+        }
+      }
+    },
+    "%lld protected files left out" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld geschützte Dateien ausgelassen"
+          }
+        }
+      }
+    },
+    "%lld reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Erinnerungen"
+          }
+        }
+      }
+    },
+    "%lld results" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Ergebnisse"
+          }
+        }
+      }
+    },
+    "%lld selected texts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld markierte Texte"
+          }
+        }
+      }
+    },
+    "%lld window titles" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Fenstertitel"
+          }
+        }
+      }
+    },
+    "%lld%%" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld %%"
+          }
+        }
+      }
+    },
+    "%lld%% (muted)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld %% (stumm)"
+          }
+        }
+      }
+    },
+    "%lld%% used" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld %% genutzt"
+          }
+        }
+      }
+    },
+    "1 contact" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Kontakt"
+          }
+        }
+      }
+    },
+    "1 email" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 E-Mail"
+          }
+        }
+      }
+    },
+    "1 event" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Termin"
+          }
+        }
+      }
+    },
+    "1 file" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Datei"
+          }
+        }
+      }
+    },
+    "1 file name" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Dateiname"
+          }
+        }
+      }
+    },
+    "1 note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Notiz"
+          }
+        }
+      }
+    },
+    "1 photo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Foto"
+          }
+        }
+      }
+    },
+    "1 protected file left out" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 geschützte Datei ausgelassen"
+          }
+        }
+      }
+    },
+    "1 reminder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Erinnerung"
+          }
+        }
+      }
+    },
+    "1 result" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Ergebnis"
+          }
+        }
+      }
+    },
+    "1 selected text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 markierter Text"
+          }
+        }
+      }
+    },
+    "1 window title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Fenstertitel"
+          }
+        }
+      }
+    },
+    "5-hour window" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5-Stunden-Fenster"
+          }
+        }
+      }
+    },
+    "7-day window" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7-Tage-Fenster"
+          }
+        }
+      }
+    },
+    "7-day window for Opus" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7-Tage-Fenster für Opus"
+          }
+        }
+      }
+    },
+    "7-day window for Sonnet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7-Tage-Fenster für Sonnet"
+          }
+        }
+      }
+    },
+    "A profile or Screen Time does not allow this access." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Profil oder die Bildschirmzeit lässt diesen Zugriff nicht zu."
+          }
+        }
+      }
+    },
+    "A secure connection could not be established." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es konnte keine sichere Verbindung aufgebaut werden."
+          }
+        }
+      }
+    },
+    "A secure connection to %@ could not be established. Check the server’s address and certificate." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es konnte keine sichere Verbindung zu %@ aufgebaut werden. Prüfe die Adresse und das Zertifikat des Servers."
+          }
+        }
+      }
+    },
+    "About Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über Orbit"
+          }
+        }
+      }
+    },
+    "Access" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zugriffe"
+          }
+        }
+      }
+    },
+    "Access not allowed" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zugriff nicht erlaubt"
+          }
+        }
+      }
+    },
+    "Accessibility" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedienungshilfen"
+          }
+        }
+      }
+    },
+    "Account" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zugang"
+          }
+        }
+      }
+    },
+    "Activate, then press the new key combination. Esc cancels." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivieren und dann die neue Tastenkombination drücken. Esc bricht ab."
+          }
+        }
+      }
+    },
+    "Add Date" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum hinzufügen"
+          }
+        }
+      }
+    },
+    "Add Only" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur hinzufügen"
+          }
+        }
+      }
+    },
+    "Advanced" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erweitert"
+          }
+        }
+      }
+    },
+    "All saved chats are removed from this Mac. This cannot be undone." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle gespeicherten Chats werden von diesem Mac entfernt. Das lässt sich nicht rückgängig machen."
+          }
+        }
+      }
+    },
+    "All Set" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles bereit"
+          }
+        }
+      }
+    },
+    "Allow %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ erlauben"
+          }
+        }
+      }
+    },
+    "Allow access in Settings > Permissions. Until then, Orbit does not offer this tool." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlaube den Zugriff unter Einstellungen > Berechtigungen. Bis dahin bietet Orbit das Werkzeug nicht an."
+          }
+        }
+      }
+    },
+    "Allow Orbit in System Settings > General > Login Items." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlaube Orbit in den Systemeinstellungen unter Allgemein > Anmeldeobjekte."
+          }
+        }
+      }
+    },
+    "Allow…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlauben …"
+          }
+        }
+      }
+    },
+    "Allowed" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlaubt"
+          }
+        }
+      }
+    },
+    "Already set, nothing changed." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "War schon eingestellt, nichts geändert."
+          }
+        }
+      }
+    },
+    "An unexpected error occurred. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "Another copy of Orbit is open (version %1$@). Quit it so this copy (version %2$@) can start?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eine andere Kopie von Orbit ist geöffnet (Version %1$@). Soll sie beendet werden, damit diese Kopie (Version %2$@) startet?"
+          }
+        }
+      }
+    },
+    "Anthropic API" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anthropic-API"
+          }
+        }
+      }
+    },
+    "Any server with a Chat Completions API, including local models with Ollama or LM Studio." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeder Server mit Chat-Completions-API, auch lokale Modelle mit Ollama oder LM Studio."
+          }
+        }
+      }
+    },
+    "API key" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API-Schlüssel"
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erscheinungsbild"
+          }
+        }
+      }
+    },
+    "Appearance was already dark" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erscheinungsbild war schon dunkel"
+          }
+        }
+      }
+    },
+    "Appearance was already light" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erscheinungsbild war schon hell"
+          }
+        }
+      }
+    },
+    "Application" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Programm"
+          }
+        }
+      }
+    },
+    "Apps" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps"
+          }
+        }
+      }
+    },
+    "Apps, files and contacts appear as you type." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps, Dateien und Kontakte erscheinen schon beim Tippen."
+          }
+        }
+      }
+    },
+    "As soon as Orbit brings tools for files, mail, calendars and more, you can turn each of them on and off here." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobald Orbit Werkzeuge für Dateien, Mail, Kalender und mehr mitbringt, kannst du sie hier einzeln ein- und ausschalten."
+          }
+        }
+      }
+    },
+    "Ask and Get Things Done" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragen und erledigen"
+          }
+        }
+      }
+    },
+    "Ask Orbit or search…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frag Orbit oder suche …"
+          }
+        }
+      }
+    },
+    "Ask Orbit: “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit fragen: „%@“"
+          }
+        }
+      }
+    },
+    "Asks first" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Bestätigung"
+          }
+        }
+      }
+    },
+    "Asks macOS for permission now." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragt macOS jetzt um Erlaubnis."
+          }
+        }
+      }
+    },
+    "Asks Spotlight again whether it shows your mail to Orbit. No message is read." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragt Spotlight noch einmal, ob es Orbit deine Mails zeigt. Dabei wird keine Mail gelesen."
+          }
+        }
+      }
+    },
+    "At most %lld times per request" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Höchstens %lld-mal pro Anfrage"
+          }
+        }
+      }
+    },
+    "Automatic" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisch"
+          }
+        }
+      }
+    },
+    "Automation" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automation"
+          }
+        }
+      }
+    },
+    "Automation: Finder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automation: Finder"
+          }
+        }
+      }
+    },
+    "Automation: Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automation: Mail"
+          }
+        }
+      }
+    },
+    "Automation: Notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automation: Notizen"
+          }
+        }
+      }
+    },
+    "Automation: Photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automation: Fotos"
+          }
+        }
+      }
+    },
+    "Automation: System Events" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automation: System Events"
+          }
+        }
+      }
+    },
+    "Back" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurück"
+          }
+        }
+      }
+    },
+    "Bcc: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blindkopie (Bcc): %@"
+          }
+        }
+      }
+    },
+    "Bcc: only with a link from your message" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blindkopie (Bcc): nur mit Link aus deiner Nachricht"
+          }
+        }
+      }
+    },
+    "Below each answer, the chat shows which content (such as emails or files) was sent to the provider." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Chat steht unter jeder Antwort, welche Inhalte (etwa E-Mails oder Dateien) an den Anbieter gesendet wurden."
+          }
+        }
+      }
+    },
+    "Brings the draft window in Mail to the front" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bringt das Entwurfsfenster in Mail nach vorn"
+          }
+        }
+      }
+    },
+    "Brings the reply window in Mail to the front" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bringt das Antwortfenster in Mail nach vorn"
+          }
+        }
+      }
+    },
+    "Calendar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender"
+          }
+        }
+      }
+    },
+    "Calendars" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalender"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        }
+      }
+    },
+    "Cancel (⌘.)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen (⌘.)"
+          }
+        }
+      }
+    },
+    "Canceled" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abgebrochen"
+          }
+        }
+      }
+    },
+    "Canceled (event)" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abgesagt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Canceled"
+          }
+        }
+      }
+    },
+    "Canceled." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abgebrochen."
+          }
+        }
+      }
+    },
+    "Cannot be undone. Orbit asks first and shows a clear warning." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lässt sich nicht rückgängig machen. Orbit fragt vorher nach und warnt deutlich."
+          }
+        }
+      }
+    },
+    "Cc" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopie (Cc)"
+          }
+        }
+      }
+    },
+    "Cc:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cc:"
+          }
+        }
+      }
+    },
+    "Cc: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopie (Cc): %@"
+          }
+        }
+      }
+    },
+    "Change appearance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erscheinungsbild ändern"
+          }
+        }
+      }
+    },
+    "Change volume" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lautstärke ändern"
+          }
+        }
+      }
+    },
+    "Changes something. Orbit asks first." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändert etwas. Orbit fragt vorher nach."
+          }
+        }
+      }
+    },
+    "Changing the appearance…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändere das Erscheinungsbild…"
+          }
+        }
+      }
+    },
+    "Changing the volume…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändere die Lautstärke…"
+          }
+        }
+      }
+    },
+    "Chat" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat"
+          }
+        }
+      }
+    },
+    "Chat History" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatverlauf"
+          }
+        }
+      }
+    },
+    "Chat history deleted" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatverlauf gelöscht"
+          }
+        }
+      }
+    },
+    "Check %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ prüfen"
+          }
+        }
+      }
+    },
+    "Check Again" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erneut prüfen"
+          }
+        }
+      }
+    },
+    "Check Status" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status prüfen"
+          }
+        }
+      }
+    },
+    "Check…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfen …"
+          }
+        }
+      }
+    },
+    "Checking Claude Code…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfe Claude Code …"
+          }
+        }
+      }
+    },
+    "Checking…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird geprüft …"
+          }
+        }
+      }
+    },
+    "Claude Code is not signed in" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code ist nicht angemeldet"
+          }
+        }
+      }
+    },
+    "Claude Code is not signed in with a Claude subscription; usage is billed through the Anthropic Console." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code ist nicht mit einem Claude-Abo angemeldet; die Nutzung wird über die Anthropic Console abgerechnet."
+          }
+        }
+      }
+    },
+    "Claude Code is not signed in. Sign in with your Claude account. Signing in happens in your browser, through Anthropic." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code ist nicht angemeldet. Melde dich mit deinem Claude-Konto an. Die Anmeldung läuft im Browser über Anthropic."
+          }
+        }
+      }
+    },
+    "Claude Code quit unexpectedly. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code wurde unerwartet beendet. Bitte versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "Claude Code was not found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code wurde nicht gefunden"
+          }
+        }
+      }
+    },
+    "Claude Code was not found. Install the Claude app or Claude Code, or choose another provider in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude Code wurde nicht gefunden. Installiere die Claude-App oder Claude Code, oder wähle in den Einstellungen einen anderen Anbieter."
+          }
+        }
+      }
+    },
+    "Claude Code’s status could not be checked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Status von Claude Code konnte nicht geprüft werden"
+          }
+        }
+      }
+    },
+    "Claude subscription (via Claude Code)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude-Abo (über Claude Code)"
+          }
+        }
+      }
+    },
+    "Claude through the Anthropic API. You can get an API key in the Anthropic Console." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude über die Anthropic-API. Den API-Schlüssel erhältst du in der Anthropic Console."
+          }
+        }
+      }
+    },
+    "Click to record a new shortcut." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klicken, um ein neues Tastenkürzel aufzunehmen."
+          }
+        }
+      }
+    },
+    "Close Window" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fenster schließen"
+          }
+        }
+      }
+    },
+    "Closes the setup. It is always available from Orbit’s menu in the menu bar." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließt die Einrichtung. Du findest sie jederzeit im Menü von Orbit in der Menüleiste."
+          }
+        }
+      }
+    },
+    "Command-%lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Befehl-%lld"
+          }
+        }
+      }
+    },
+    "Completed" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erledigt"
+          }
+        }
+      }
+    },
+    "Confirmation needed: %@. ⌘↩ runs the action, ⌘. cancels it." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestätigung nötig: %@. ⌘↩ führt die Aktion aus, ⌘. bricht sie ab."
+          }
+        }
+      }
+    },
+    "Confirmation needed: %@. Open Orbit to run or cancel the action." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestätigung nötig: %@. Öffne Orbit, um die Aktion auszuführen oder abzubrechen."
+          }
+        }
+      }
+    },
+    "Confirmation: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestätigung: %@"
+          }
+        }
+      }
+    },
+    "Connected to your Claude account" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit deinem Claude-Konto verbunden"
+          }
+        }
+      }
+    },
+    "Connected to your Claude subscription (%@)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbunden mit deinem Claude-Abo (%@)"
+          }
+        }
+      }
+    },
+    "Connecting…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbinde …"
+          }
+        }
+      }
+    },
+    "Connection successful" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung erfolgreich"
+          }
+        }
+      }
+    },
+    "Contacts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakte"
+          }
+        }
+      }
+    },
+    "Content goes only to the language model you choose, and only when a question needs it. The chat shows what was sent." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inhalte gehen nur an das Sprachmodell, das du wählst, und nur, wenn eine Frage sie braucht. Der Chat zeigt, was gesendet wurde."
+          }
+        }
+      }
+    },
+    "Context" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontext"
+          }
+        }
+      }
+    },
+    "Context added: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontext übernommen: %@"
+          }
+        }
+      }
+    },
+    "Context removed: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontext entfernt: %@"
+          }
+        }
+      }
+    },
+    "Context: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontext: %@"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        }
+      }
+    },
+    "Continue chat" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat fortsetzen"
+          }
+        }
+      }
+    },
+    "Continue chat: “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat fortsetzen: „%@“"
+          }
+        }
+      }
+    },
+    "Copied" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiert"
+          }
+        }
+      }
+    },
+    "Copy" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopieren"
+          }
+        }
+      }
+    },
+    "Copy Code" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code kopieren"
+          }
+        }
+      }
+    },
+    "Copy Path" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pfad kopieren"
+          }
+        }
+      }
+    },
+    "Copy Text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text kopieren"
+          }
+        }
+      }
+    },
+    "Create" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstellen"
+          }
+        }
+      }
+    },
+    "Create email draft" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mail-Entwurf erstellen"
+          }
+        }
+      }
+    },
+    "Create event" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termin erstellen"
+          }
+        }
+      }
+    },
+    "Create note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notiz erstellen"
+          }
+        }
+      }
+    },
+    "Create reminder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerung erstellen"
+          }
+        }
+      }
+    },
+    "Created event “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termin „%@“ erstellt"
+          }
+        }
+      }
+    },
+    "Created note “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notiz „%@“ erstellt"
+          }
+        }
+      }
+    },
+    "Created reminder “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerung „%@“ erstellt"
+          }
+        }
+      }
+    },
+    "Creating email draft…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle E-Mail-Entwurf…"
+          }
+        }
+      }
+    },
+    "Creating event…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle Termin…"
+          }
+        }
+      }
+    },
+    "Creating note…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle Notiz…"
+          }
+        }
+      }
+    },
+    "Creating reminder…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle Erinnerung…"
+          }
+        }
+      }
+    },
+    "Current" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktuell"
+          }
+        }
+      }
+    },
+    "Cut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausschneiden"
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dunkel"
+          }
+        }
+      }
+    },
+    "Dark appearance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dunkles Erscheinungsbild"
+          }
+        }
+      }
+    },
+    "Dark appearance turned on" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dunkles Erscheinungsbild eingeschaltet"
+          }
+        }
+      }
+    },
+    "Declined" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abgelehnt"
+          }
+        }
+      }
+    },
+    "Default calendar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardkalender"
+          }
+        }
+      }
+    },
+    "Default list" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardliste"
+          }
+        }
+      }
+    },
+    "Delete Chat History" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatverlauf löschen"
+          }
+        }
+      }
+    },
+    "Delete Chat History…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatverlauf löschen …"
+          }
+        }
+      }
+    },
+    "Delete the entire chat history?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesamten Chatverlauf löschen?"
+          }
+        }
+      }
+    },
+    "details of %lld photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Angaben zu %lld Fotos"
+          }
+        }
+      }
+    },
+    "details of 1 photo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Angaben zu 1 Foto"
+          }
+        }
+      }
+    },
+    "Detect automatically" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisch erkennen"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fertig"
+          }
+        }
+      }
+    },
+    "Draft" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entwurf"
+          }
+        }
+      }
+    },
+    "Due" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fällig"
+          }
+        }
+      }
+    },
+    "e.g. gpt-oss:20b" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "z. B. gpt-oss:20b"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten"
+          }
+        }
+      }
+    },
+    "Email draft" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mail-Entwurf"
+          }
+        }
+      }
+    },
+    "Email reply" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mail-Antwort"
+          }
+        }
+      }
+    },
+    "End" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende"
+          }
+        }
+      }
+    },
+    "Error: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler: %@"
+          }
+        }
+      }
+    },
+    "Every permission is optional. Without one, Orbit turns off the related tools and tells the assistant. macOS asks only when you click “Allow…” here or when a tool needs access for the first time." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Berechtigungen sind freiwillig. Fehlt eine, schaltet Orbit die zugehörigen Werkzeuge ab und sagt es dem Assistenten. macOS fragt nur, wenn du hier auf „Erlauben …“ klickst oder ein Werkzeug den Zugriff zum ersten Mal braucht."
+          }
+        }
+      }
+    },
+    "Failed" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehlgeschlagen"
+          }
+        }
+      }
+    },
+    "Fast, in all mailboxes at once, and also in the text of the messages. For unread mail and for Sent, Drafts, Junk and Trash, Orbit still asks Mail, which searches by subject and sender only." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schnell, in allen Postfächern auf einmal und auch im Text der Mails. Ungelesene Mails sowie Gesendet, Entwürfe, Werbung und Papierkorb fragt Orbit weiterhin bei Mail ab, dort nur nach Betreff und Absender."
+          }
+        }
+      }
+    },
+    "Favorite" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorit"
+          }
+        }
+      }
+    },
+    "File" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datei"
+          }
+        }
+      }
+    },
+    "Files" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dateien"
+          }
+        }
+      }
+    },
+    "Find contacts, turn names into email addresses, show contacts in search results and address you by the name on “My Card”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakte finden, Namen in E-Mail-Adressen umwandeln, Kontakte in der Suche zeigen und dich mit deinem Namen aus „Meine Karte“ ansprechen."
+          }
+        }
+      }
+    },
+    "Find Instantly" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sofort finden"
+          }
+        }
+      }
+    },
+    "Find photos and videos by date, album and favorites and show them as thumbnails. The pictures themselves never go to the language model." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotos und Videos nach Datum, Album und Favoriten finden und als Vorschaubilder zeigen. Die Bilder selbst gehen nie an das Sprachmodell."
+          }
+        }
+      }
+    },
+    "Finder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finder"
+          }
+        }
+      }
+    },
+    "Folder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordner"
+          }
+        }
+      }
+    },
+    "Folder not found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordner nicht gefunden"
+          }
+        }
+      }
+    },
+    "For example, http://localhost:11434/v1 for Ollama or http://localhost:1234/v1 for LM Studio." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zum Beispiel http://localhost:11434/v1 für Ollama oder http://localhost:1234/v1 für LM Studio."
+          }
+        }
+      }
+    },
+    "Found %lld contacts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Kontakte gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld emails" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld E-Mails gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld events" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Termine gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld files" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Dateien gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Notizen gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Fotos gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Erinnerungen gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld shortcuts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Kurzbefehle gefunden"
+          }
+        }
+      }
+    },
+    "Found %lld videos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Videos gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 contact" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Kontakt gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 email" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 E-Mail gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 event" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Termin gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 file" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Datei gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Notiz gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 photo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Foto gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 reminder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Erinnerung gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Kurzbefehl gefunden"
+          }
+        }
+      }
+    },
+    "Found 1 video" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Video gefunden"
+          }
+        }
+      }
+    },
+    "Frontmost app: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorderste App: %@"
+          }
+        }
+      }
+    },
+    "Full Disk Access" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festplattenvollzugriff"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allgemein"
+          }
+        }
+      }
+    },
+    "Get Started" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los geht’s"
+          }
+        }
+      }
+    },
+    "Haiku: fastest" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haiku: am schnellsten"
+          }
+        }
+      }
+    },
+    "Hide Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit ausblenden"
+          }
+        }
+      }
+    },
+    "High" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoch"
+          }
+        }
+      }
+    },
+    "How Orbit Searches Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So sucht Orbit Mails"
+          }
+        }
+      }
+    },
+    "How thoroughly the model thinks. Higher is more thorough but slower. “Automatic” sends no setting." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie gründlich das Modell nachdenkt. Höher ist gründlicher, aber langsamer. „Automatisch“ sendet keine Vorgabe."
+          }
+        }
+      }
+    },
+    "How thoroughly the model thinks. Higher is more thorough but slower. “Automatic” uses Claude Code’s default." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie gründlich das Modell nachdenkt. Höher ist gründlicher, aber langsamer. „Automatisch“ nutzt die Vorgabe von Claude Code."
+          }
+        }
+      }
+    },
+    "If you just turned on Full Disk Access, it takes effect after Orbit restarts." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hast du gerade den Festplattenvollzugriff eingeschaltet, wirkt er nach einem Neustart von Orbit."
+          }
+        }
+      }
+    },
+    "Input" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eingabe"
+          }
+        }
+      }
+    },
+    "Install the Claude app from claude.ai/download or Claude Code in Terminal, then click “Check Status”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installiere die Claude-App von claude.ai/download oder Claude Code im Terminal, dann „Status prüfen“."
+          }
+        }
+      }
+    },
+    "Invalid address. Example: http://localhost:11434/v1" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ungültige Adresse. Beispiel: http://localhost:11434/v1"
+          }
+        }
+      }
+    },
+    "Invalid input" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ungültige Eingabe"
+          }
+        }
+      }
+    },
+    "Invalid parameters" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ungültige Parameter"
+          }
+        }
+      }
+    },
+    "It resets on %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es wird am %@ zurückgesetzt."
+          }
+        }
+      }
+    },
+    "Keyboard Shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastenkürzel"
+          }
+        }
+      }
+    },
+    "Keyboard shortcut to open Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastenkürzel zum Öffnen von Orbit"
+          }
+        }
+      }
+    },
+    "Keyboard shortcut: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastenkürzel: %@"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprache"
+          }
+        }
+      }
+    },
+    "Language Model" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprachmodell"
+          }
+        }
+      }
+    },
+    "Last day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letzter Tag"
+          }
+        }
+      }
+    },
+    "Later" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Später"
+          }
+        }
+      }
+    },
+    "Leave empty to find Claude Code automatically (from the Claude app or an installation in Terminal)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leer lassen, um Claude Code automatisch zu finden (aus der Claude-App oder einer Installation im Terminal)."
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hell"
+          }
+        }
+      }
+    },
+    "Light appearance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helles Erscheinungsbild"
+          }
+        }
+      }
+    },
+    "Light appearance turned on" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helles Erscheinungsbild eingeschaltet"
+          }
+        }
+      }
+    },
+    "Link" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link"
+          }
+        }
+      }
+    },
+    "List" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liste"
+          }
+        }
+      }
+    },
+    "List shortcuts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurzbefehle auflisten"
+          }
+        }
+      }
+    },
+    "Live Photo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Live Photo"
+          }
+        }
+      }
+    },
+    "Local network: only with a link from your message" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokales Netzwerk: nur mit Link aus deiner Nachricht"
+          }
+        }
+      }
+    },
+    "Location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ort"
+          }
+        }
+      }
+    },
+    "Looking for recent files…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suche zuletzt verwendete Dateien…"
+          }
+        }
+      }
+    },
+    "Low" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niedrig"
+          }
+        }
+      }
+    },
+    "macOS already uses this shortcut. Change it first in System Settings > Keyboard > Keyboard Shortcuts." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS verwendet dieses Kürzel bereits. Ändere es zuerst in den Systemeinstellungen unter Tastatur > Tastaturkurzbefehle."
+          }
+        }
+      }
+    },
+    "macOS asks once whether Orbit may access it." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS fragt einmal, ob Orbit darauf zugreifen darf."
+          }
+        }
+      }
+    },
+    "macOS asks once whether Orbit may control “%1$@”. If %1$@ is not running, Orbit starts it in the background for this." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS fragt einmal, ob Orbit „%1$@“ steuern darf. Läuft %1$@ gerade nicht, startet Orbit die App dafür im Hintergrund."
+          }
+        }
+      }
+    },
+    "macOS reports the status only while %@ is running." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS nennt den Status erst, wenn %@ läuft."
+          }
+        }
+      }
+    },
+    "macOS shows a notice that leads to System Settings, where you turn on Orbit." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS zeigt einen Hinweis, der zu den Systemeinstellungen führt. Dort schaltest du Orbit ein."
+          }
+        }
+      }
+    },
+    "Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail"
+          }
+        }
+      }
+    },
+    "Mail Search" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail-Suche"
+          }
+        }
+      }
+    },
+    "Mailbox not found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postfach nicht gefunden"
+          }
+        }
+      }
+    },
+    "Medium" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mittel"
+          }
+        }
+      }
+    },
+    "Message Orbit…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nachricht an Orbit …"
+          }
+        }
+      }
+    },
+    "Missing permission: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Berechtigung: %@"
+          }
+        }
+      }
+    },
+    "Model" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modell"
+          }
+        }
+      }
+    },
+    "Model suggestions" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modellvorschläge"
+          }
+        }
+      }
+    },
+    "More options, such as the model and the reasoning effort, are in Settings under “Model”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weitere Einstellungen wie Modell und Denkaufwand findest du später in den Einstellungen unter „Modell“."
+          }
+        }
+      }
+    },
+    "name of 1 album" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name von 1 Album"
+          }
+        }
+      }
+    },
+    "name of 1 calendar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name von 1 Kalender"
+          }
+        }
+      }
+    },
+    "name of 1 folder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name von 1 Ordner"
+          }
+        }
+      }
+    },
+    "name of 1 mailbox" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name von 1 Postfach"
+          }
+        }
+      }
+    },
+    "name of 1 reminder list" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name von 1 Erinnerungsliste"
+          }
+        }
+      }
+    },
+    "name of 1 shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name von 1 Kurzbefehl"
+          }
+        }
+      }
+    },
+    "names of %lld albums" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namen von %lld Alben"
+          }
+        }
+      }
+    },
+    "names of %lld calendars" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namen von %lld Kalendern"
+          }
+        }
+      }
+    },
+    "names of %lld folders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namen von %lld Ordnern"
+          }
+        }
+      }
+    },
+    "names of %lld mailboxes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namen von %lld Postfächern"
+          }
+        }
+      }
+    },
+    "names of %lld reminder lists" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namen von %lld Erinnerungslisten"
+          }
+        }
+      }
+    },
+    "names of %lld shortcuts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namen von %lld Kurzbefehlen"
+          }
+        }
+      }
+    },
+    "Network" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netzwerk"
+          }
+        }
+      }
+    },
+    "Network error. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Netzwerkfehler. Bitte versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "New Chat" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Chat"
+          }
+        }
+      }
+    },
+    "New Chat (⌘N)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Chat (⌘N)"
+          }
+        }
+      }
+    },
+    "New email" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue E-Mail"
+          }
+        }
+      }
+    },
+    "New email in your mail app. You send it from there." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue E-Mail im Mail-Programm. Du schickst sie dort ab."
+          }
+        }
+      }
+    },
+    "New Event" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Termin"
+          }
+        }
+      }
+    },
+    "New in Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neu in Orbit"
+          }
+        }
+      }
+    },
+    "New Note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Notiz"
+          }
+        }
+      }
+    },
+    "New Reminder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Erinnerung"
+          }
+        }
+      }
+    },
+    "No API key is set. Enter it in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es ist kein API-Schlüssel hinterlegt. Trage ihn in den Einstellungen ein."
+          }
+        }
+      }
+    },
+    "No contacts found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Kontakte gefunden"
+          }
+        }
+      }
+    },
+    "No Date" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne Datum"
+          }
+        }
+      }
+    },
+    "No emails found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine E-Mails gefunden"
+          }
+        }
+      }
+    },
+    "No events found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Termine gefunden"
+          }
+        }
+      }
+    },
+    "No files found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Dateien gefunden"
+          }
+        }
+      }
+    },
+    "No internet connection." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Internetverbindung."
+          }
+        }
+      }
+    },
+    "No key saved" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Schlüssel gespeichert"
+          }
+        }
+      }
+    },
+    "No key saved (not needed for local servers)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Schlüssel gespeichert (für lokale Server nicht nötig)"
+          }
+        }
+      }
+    },
+    "No model is set. Enter a model in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es ist kein Modell eingestellt. Trage in den Einstellungen ein Modell ein."
+          }
+        }
+      }
+    },
+    "No notes found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Notizen gefunden"
+          }
+        }
+      }
+    },
+    "No other app in front" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine andere App im Vordergrund"
+          }
+        }
+      }
+    },
+    "No output" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Ausgabe"
+          }
+        }
+      }
+    },
+    "No photos found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Fotos gefunden"
+          }
+        }
+      }
+    },
+    "No reminders found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Erinnerungen gefunden"
+          }
+        }
+      }
+    },
+    "No results" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Ergebnisse"
+          }
+        }
+      }
+    },
+    "No Shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Tastenkürzel"
+          }
+        }
+      }
+    },
+    "No shortcuts found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Kurzbefehle gefunden"
+          }
+        }
+      }
+    },
+    "No Tools Available" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Werkzeuge verfügbar"
+          }
+        }
+      }
+    },
+    "Not allowed" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht erlaubt"
+          }
+        }
+      }
+    },
+    "Not asked yet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch nicht gefragt"
+          }
+        }
+      }
+    },
+    "Not available" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht verfügbar"
+          }
+        }
+      }
+    },
+    "Not completed" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offen"
+          }
+        }
+      }
+    },
+    "Not found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht gefunden"
+          }
+        }
+      }
+    },
+    "Not opened for security reasons" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus Sicherheitsgründen nicht geöffnet"
+          }
+        }
+      }
+    },
+    "Not run" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht ausgeführt"
+          }
+        }
+      }
+    },
+    "Not run: the request ended." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht ausgeführt: Die Anfrage wurde beendet."
+          }
+        }
+      }
+    },
+    "Not saved" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht gesichert"
+          }
+        }
+      }
+    },
+    "not set up" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nicht eingerichtet"
+          }
+        }
+      }
+    },
+    "Not turned on in this chat" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In diesem Chat nicht aktiviert"
+          }
+        }
+      }
+    },
+    "Note is locked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notiz ist gesperrt"
+          }
+        }
+      }
+    },
+    "Notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notizen"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus"
+          }
+        }
+      }
+    },
+    "On" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An"
+          }
+        }
+      }
+    },
+    "Only in iCloud" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur in iCloud"
+          }
+        }
+      }
+    },
+    "Only reads and runs without asking." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liest nur und läuft ohne Rückfrage."
+          }
+        }
+      }
+    },
+    "Open" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnen"
+          }
+        }
+      }
+    },
+    "Open app" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App öffnen"
+          }
+        }
+      }
+    },
+    "Open at login" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bei der Anmeldung starten"
+          }
+        }
+      }
+    },
+    "Open file" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datei öffnen"
+          }
+        }
+      }
+    },
+    "Open in Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Mail öffnen"
+          }
+        }
+      }
+    },
+    "Open in Notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Notizen öffnen"
+          }
+        }
+      }
+    },
+    "Open Keyboard Settings…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastatur-Einstellungen öffnen …"
+          }
+        }
+      }
+    },
+    "Open link" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link öffnen"
+          }
+        }
+      }
+    },
+    "Open Login Items…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anmeldeobjekte öffnen …"
+          }
+        }
+      }
+    },
+    "Open note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notiz öffnen"
+          }
+        }
+      }
+    },
+    "Open Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit öffnen"
+          }
+        }
+      }
+    },
+    "Open Orbit from its icon in the menu bar, then type a name or ask a question." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne Orbit über das Symbol in der Menüleiste. Tippe dann einen Namen oder stelle eine Frage."
+          }
+        }
+      }
+    },
+    "Open Settings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen öffnen"
+          }
+        }
+      }
+    },
+    "Open Settings (⌘,)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen öffnen (⌘,)"
+          }
+        }
+      }
+    },
+    "Open System Settings for %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systemeinstellungen öffnen für %@"
+          }
+        }
+      }
+    },
+    "Open System Settings…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systemeinstellungen öffnen …"
+          }
+        }
+      }
+    },
+    "OpenAI-compatible" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenAI-kompatibel"
+          }
+        }
+      }
+    },
+    "OpenAI-compatible (e.g. Ollama, LM Studio)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenAI-kompatibel (z. B. Ollama, LM Studio)"
+          }
+        }
+      }
+    },
+    "Opened “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ geöffnet"
+          }
+        }
+      }
+    },
+    "Opened “%@” in Notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ in Notizen geöffnet"
+          }
+        }
+      }
+    },
+    "Opened draft in Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entwurf in Mail geöffnet"
+          }
+        }
+      }
+    },
+    "Opened in Mail: review it there before sending" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Mail geöffnet: vor dem Senden dort prüfen"
+          }
+        }
+      }
+    },
+    "Opened link: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link geöffnet: %@"
+          }
+        }
+      }
+    },
+    "Opened reply in Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antwort in Mail geöffnet"
+          }
+        }
+      }
+    },
+    "Opening “%@”…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne „%@“…"
+          }
+        }
+      }
+    },
+    "Opening app…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne App…"
+          }
+        }
+      }
+    },
+    "Opening at login is not available for this copy of Orbit. Move Orbit to the Applications folder and open it from there." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der automatische Start ist für diese Kopie von Orbit nicht verfügbar. Lege Orbit in den Programme-Ordner und starte es von dort."
+          }
+        }
+      }
+    },
+    "Opening at login was denied in System Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der automatische Start wurde in den Systemeinstellungen abgelehnt."
+          }
+        }
+      }
+    },
+    "Opening link…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne Link…"
+          }
+        }
+      }
+    },
+    "Opening note…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne Notiz…"
+          }
+        }
+      }
+    },
+    "Opening reply in Mail…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne Antwort in Mail…"
+          }
+        }
+      }
+    },
+    "Opens Anthropic’s sign-in in your browser. Orbit never sees your credentials." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet die Anmeldung von Anthropic im Browser. Orbit sieht deine Zugangsdaten nicht."
+          }
+        }
+      }
+    },
+    "Opens Anthropic’s sign-in in your browser. Orbit then sends the request again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet die Anmeldung von Anthropic im Browser. Danach sendet Orbit die Anfrage erneut."
+          }
+        }
+      }
+    },
+    "Opens or drafts something without sending it. Runs without asking." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet oder entwirft etwas, ohne es abzuschicken. Läuft ohne Rückfrage."
+          }
+        }
+      }
+    },
+    "Opens Orbit’s settings under “Permissions”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet Orbits Einstellungen unter „Berechtigungen“"
+          }
+        }
+      }
+    },
+    "Opens Privacy & Security in System Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet Datenschutz & Sicherheit in den Systemeinstellungen."
+          }
+        }
+      }
+    },
+    "Opens the email in Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet die E-Mail in Mail"
+          }
+        }
+      }
+    },
+    "Opens the file" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet die Datei"
+          }
+        }
+      }
+    },
+    "Opens the folder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet den Ordner"
+          }
+        }
+      }
+    },
+    "Opens the note in Notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet die Notiz in Notizen"
+          }
+        }
+      }
+    },
+    "Optional" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optional"
+          }
+        }
+      }
+    },
+    "Optional: with it, Spotlight may show your mail to Orbit. Orbit then searches all mailboxes at once and also the text of the messages, faster than through Mail." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optional: Damit zeigt Spotlight Orbit womöglich deine Mails. Dann sucht Orbit in allen Postfächern auf einmal und auch im Text der Mails, schneller als über Mail."
+          }
+        }
+      }
+    },
+    "Optional. Leave empty for api.anthropic.com, or enter the address of a compatible server, e.g. http://localhost:11434 for Ollama." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optional. Leer lassen für api.anthropic.com oder die Adresse eines kompatiblen Servers eintragen, z. B. http://localhost:11434 für Ollama."
+          }
+        }
+      }
+    },
+    "Opus: most capable" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opus: am leistungsfähigsten"
+          }
+        }
+      }
+    },
+    "Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit"
+          }
+        }
+      }
+    },
+    "Orbit allows unencrypted connections (http://) only to this Mac, to IP addresses and to .local addresses. Use https:// or the server’s IP address." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unverschlüsselte Verbindungen (http://) erlaubt Orbit nur zu diesem Mac, zu IP-Adressen und zu .local-Adressen. Verwende https:// oder die IP-Adresse des Servers."
+          }
+        }
+      }
+    },
+    "Orbit already uses this shortcut for “%@”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit verwendet dieses Kürzel bereits für „%@“."
+          }
+        }
+      }
+    },
+    "Orbit asks Mail directly. This always works but is slower with large mailboxes and searches only subjects and senders. With Full Disk Access, Spotlight may show your mail to Orbit; Orbit then searches there, including the text of the messages." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit fragt Mail direkt. Das klappt immer, ist bei großen Postfächern aber langsamer und sucht nur in Betreff und Absender. Mit Festplattenvollzugriff zeigt Spotlight Orbit die Mails womöglich; dann sucht Orbit dort, auch im Text der Mails."
+          }
+        }
+      }
+    },
+    "Orbit brings search and an assistant to your Mac. Open it with a keyboard shortcut, then type a name or ask a question." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit ist Suche und Assistent für deinen Mac. Öffne Orbit mit einem Tastenkürzel, tippe einen Namen oder stelle eine Frage."
+          }
+        }
+      }
+    },
+    "Orbit carries out actions with consequences only after you confirm them. It never sends mail by itself." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktionen mit Folgen führt Orbit erst nach deiner Bestätigung aus. Mails verschickt Orbit nie selbst."
+          }
+        }
+      }
+    },
+    "Orbit checks whether Spotlight shows your mail to Orbit. No message is read." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit prüft, ob Spotlight Orbit deine Mails zeigt. Dabei wird keine Mail gelesen."
+          }
+        }
+      }
+    },
+    "Orbit could not be added to the login items." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit konnte nicht als Anmeldeobjekt eingetragen werden."
+          }
+        }
+      }
+    },
+    "Orbit could not be removed from the login items." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit konnte nicht aus den Anmeldeobjekten entfernt werden."
+          }
+        }
+      }
+    },
+    "Orbit creates this all-day event in your calendar." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit legt diesen ganztägigen Termin in deinem Kalender an."
+          }
+        }
+      }
+    },
+    "Orbit creates this event in your calendar." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit legt diesen Termin in deinem Kalender an."
+          }
+        }
+      }
+    },
+    "Orbit creates this note in Notes. Without a folder, it goes to the default folder." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit legt diese Notiz in Notizen an. Ohne Ordner landet sie im Standardordner."
+          }
+        }
+      }
+    },
+    "Orbit creates this reminder in Reminders. A date without a time covers the whole day." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit legt diese Erinnerung in Erinnerungen an. Ein Datum ohne Uhrzeit gilt für den ganzen Tag."
+          }
+        }
+      }
+    },
+    "Orbit does not have full access to your calendars." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit hat keinen vollen Zugriff auf deine Kalender."
+          }
+        }
+      }
+    },
+    "Orbit does not have full access to your reminders." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit hat keinen vollen Zugriff auf deine Erinnerungen."
+          }
+        }
+      }
+    },
+    "Orbit does not have the permission “%@”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit fehlt die Berechtigung „%@“."
+          }
+        }
+      }
+    },
+    "Orbit does not offer turned-off tools to the model, and it never carries out actions with consequences without your confirmation." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgeschaltete Werkzeuge bietet Orbit dem Modell nicht an. Aktionen mit Folgen führt Orbit nie ohne deine Bestätigung aus."
+          }
+        }
+      }
+    },
+    "Orbit follows the language of macOS: English or German, whichever comes first in your preferred languages, otherwise English. To choose a language just for Orbit, go to System Settings > General > Language & Region > Applications; it takes effect after Orbit restarts." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit folgt der Sprache von macOS: Englisch oder Deutsch, je nachdem, was in deinen bevorzugten Sprachen zuerst steht, sonst Englisch. Eine eigene Sprache nur für Orbit stellst du in den Systemeinstellungen unter Allgemein > Sprache & Region > Apps ein; sie gilt nach einem Neustart von Orbit."
+          }
+        }
+      }
+    },
+    "Orbit has access. You can change this anytime in System Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf darauf zugreifen. Ändern kannst du das jederzeit in den Systemeinstellungen."
+          }
+        }
+      }
+    },
+    "Orbit Is Already Running" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit läuft bereits"
+          }
+        }
+      }
+    },
+    "Orbit is answering…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit antwortet …"
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to access your contacts." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf nicht auf deine Kontakte zugreifen."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to access your photos." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf nicht auf deine Fotos zugreifen."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Finder." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf den Finder nicht steuern."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Mail." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf Mail nicht steuern."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Mail. You can allow it in Orbit’s settings under “Permissions”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf Mail nicht steuern. Du kannst es in Orbits Einstellungen unter „Berechtigungen“ erlauben."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Notes." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf Notizen nicht steuern."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Notes. You can allow it in Orbit’s settings under “Permissions”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf Notizen nicht steuern. Du kannst es in Orbits Einstellungen unter „Berechtigungen“ erlauben."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Photos, so it cannot show the photo. You can allow it in Orbit’s settings under “Permissions”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf Fotos nicht steuern und kann das Foto darum nicht zeigen. Du kannst es in Orbits Einstellungen unter „Berechtigungen“ erlauben."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control Photos." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf Fotos nicht steuern."
+          }
+        }
+      }
+    },
+    "Orbit is not allowed to control System Events." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf System Events nicht steuern."
+          }
+        }
+      }
+    },
+    "Orbit is not validly signed, so it cannot open at login." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit ist nicht gültig signiert und kann deshalb nicht automatisch starten."
+          }
+        }
+      }
+    },
+    "Orbit is still answering. Wait a moment or stop the answer with Esc." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit antwortet noch. Warte kurz oder stoppe die Antwort mit Esc."
+          }
+        }
+      }
+    },
+    "Orbit may only add new items but cannot read any, which is not enough. In System Settings > Privacy & Security > %@, choose “Full Access” for Orbit." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit darf nur Neues hinzufügen, aber nichts lesen. Das reicht nicht. Wähle in den Systemeinstellungen unter Datenschutz & Sicherheit > %@ für Orbit „Vollzugriff“."
+          }
+        }
+      }
+    },
+    "Orbit mutes the sound." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit schaltet den Ton aus."
+          }
+        }
+      }
+    },
+    "Orbit reads only what you ask about. What goes to the language model is shown in the chat below the answer." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit liest nur, wonach du fragst. Was dabei an das Sprachmodell geht, steht im Chat unter der Antwort."
+          }
+        }
+      }
+    },
+    "Orbit reads your selection only when the assistant checks what you have in front of you for a question. What goes to the language model is shown in the chat below the answer." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit liest deine Auswahl nur, wenn der Assistent für eine Frage nachsieht, was du gerade vor dir hast. Was dabei an das Sprachmodell geht, steht im Chat unter der Antwort."
+          }
+        }
+      }
+    },
+    "Orbit runs this shortcut. Its actions decide what it does, and Orbit cannot see them." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit führt diesen Kurzbefehl aus. Was er tut, legen seine Aktionen fest. Orbit sieht sie nicht."
+          }
+        }
+      }
+    },
+    "Orbit sends no telemetry or analytics data." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit sendet keine Telemetrie- oder Analysedaten."
+          }
+        }
+      }
+    },
+    "Orbit sets the volume of your output device." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit stellt die Lautstärke deines Ausgabegeräts ein."
+          }
+        }
+      }
+    },
+    "Orbit Settings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit-Einstellungen"
+          }
+        }
+      }
+    },
+    "Orbit stopped running tools after %lld tool calls. Make your request more specific if the answer is incomplete." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit hat nach %lld Werkzeugaufrufen keine weiteren mehr ausgeführt. Formuliere die Anfrage genauer, wenn die Antwort unvollständig ist."
+          }
+        }
+      }
+    },
+    "Orbit stopped the request after %lld tool calls. Make it more specific, or send a new message to continue." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit hat die Anfrage nach %lld Werkzeugaufrufen angehalten. Formuliere sie genauer oder schreibe eine neue Nachricht, um fortzufahren."
+          }
+        }
+      }
+    },
+    "Orbit switches macOS to the dark appearance." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit schaltet macOS auf das dunkle Erscheinungsbild um."
+          }
+        }
+      }
+    },
+    "Orbit switches macOS to the light appearance." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit schaltet macOS auf das helle Erscheinungsbild um."
+          }
+        }
+      }
+    },
+    "Orbit’s assistant needs a language model. The easiest way is your Claude subscription, no API key needed." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbits Assistent braucht ein Sprachmodell. Am einfachsten nutzt du dein Claude-Abo, ganz ohne API-Schlüssel."
+          }
+        }
+      }
+    },
+    "Orbit’s only network connection is to the language model provider you set up (%@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die einzige Netzwerkverbindung von Orbit ist die zum eingestellten Sprachmodell-Anbieter (%@)."
+          }
+        }
+      }
+    },
+    "Output device" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgabegerät"
+          }
+        }
+      }
+    },
+    "output of %lld shortcuts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgaben von %lld Kurzbefehlen"
+          }
+        }
+      }
+    },
+    "output of 1 shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgabe von 1 Kurzbefehl"
+          }
+        }
+      }
+    },
+    "Overdue" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überfällig"
+          }
+        }
+      }
+    },
+    "Paste" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einsetzen"
+          }
+        }
+      }
+    },
+    "Path copied" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pfad kopiert"
+          }
+        }
+      }
+    },
+    "Permissions" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berechtigungen"
+          }
+        }
+      }
+    },
+    "Photo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
+        }
+      }
+    },
+    "Photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotos"
+          }
+        }
+      }
+    },
+    "Photos could not show the photo, so Orbit opened the Photos app instead." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotos konnte das Foto nicht zeigen. Orbit hat stattdessen die App „Fotos“ geöffnet."
+          }
+        }
+      }
+    },
+    "Photos did not find the photo, so Orbit opened the Photos app instead." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotos hat das Foto nicht gefunden. Orbit hat stattdessen die App „Fotos“ geöffnet."
+          }
+        }
+      }
+    },
+    "Please confirm or cancel the action above first. Your message stays here." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte bestätige oder verwirf zuerst die Aktion oben. Deine Nachricht bleibt stehen."
+          }
+        }
+      }
+    },
+    "Please enter a model." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte gib ein Modell an."
+          }
+        }
+      }
+    },
+    "Press %@ to open Orbit, then type a name or ask a question." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drücke %@, um Orbit zu öffnen. Tippe dann einen Namen oder stelle eine Frage."
+          }
+        }
+      }
+    },
+    "Press a key combination…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastenkombination drücken …"
+          }
+        }
+      }
+    },
+    "Press the new key combination. Esc cancels, ⌫ removes the shortcut." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Tastenkombination drücken. Esc bricht ab, ⌫ entfernt das Kürzel."
+          }
+        }
+      }
+    },
+    "Privacy" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datenschutz"
+          }
+        }
+      }
+    },
+    "Private" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privat"
+          }
+        }
+      }
+    },
+    "Program path" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Programmpfad"
+          }
+        }
+      }
+    },
+    "Provider" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anbieter"
+          }
+        }
+      }
+    },
+    "Puts the reply’s text on the clipboard again" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legt den Text der Antwort wieder in die Zwischenablage"
+          }
+        }
+      }
+    },
+    "Quick Look" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Übersicht"
+          }
+        }
+      }
+    },
+    "Quit Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit beenden"
+          }
+        }
+      }
+    },
+    "Ran shortcut “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurzbefehl „%@“ ausgeführt"
+          }
+        }
+      }
+    },
+    "Read" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lesen"
+          }
+        }
+      }
+    },
+    "Read “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ gelesen"
+          }
+        }
+      }
+    },
+    "Read email" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mail lesen"
+          }
+        }
+      }
+    },
+    "Read file" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datei lesen"
+          }
+        }
+      }
+    },
+    "Read frontmost app" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorderste App lesen"
+          }
+        }
+      }
+    },
+    "Read note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notiz lesen"
+          }
+        }
+      }
+    },
+    "Reading “%@”…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese „%@“…"
+          }
+        }
+      }
+    },
+    "Reading calendar…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese Kalender…"
+          }
+        }
+      }
+    },
+    "Reading email…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese E-Mail…"
+          }
+        }
+      }
+    },
+    "Reading note…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese Notiz…"
+          }
+        }
+      }
+    },
+    "Reading reminders…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese Erinnerungen…"
+          }
+        }
+      }
+    },
+    "Reading shortcuts…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese Kurzbefehle…"
+          }
+        }
+      }
+    },
+    "Reading the frontmost app…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lese die vorderste App…"
+          }
+        }
+      }
+    },
+    "Reasoning effort" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denkaufwand"
+          }
+        }
+      }
+    },
+    "Recent files" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zuletzt verwendete Dateien"
+          }
+        }
+      }
+    },
+    "Recipients unclear" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empfänger unklar"
+          }
+        }
+      }
+    },
+    "Redo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiederholen"
+          }
+        }
+      }
+    },
+    "Refresh Status" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status aktualisieren"
+          }
+        }
+      }
+    },
+    "Reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerungen"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entfernen"
+          }
+        }
+      }
+    },
+    "Remove %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ entfernen"
+          }
+        }
+      }
+    },
+    "Remove Context" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontext entfernen"
+          }
+        }
+      }
+    },
+    "Remove Shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastenkürzel entfernen"
+          }
+        }
+      }
+    },
+    "Repeats" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiederholt sich"
+          }
+        }
+      }
+    },
+    "Reply opened in Mail: copy the text with “Copy Text” and paste it with ⌘V" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antwort in Mail geöffnet: Text mit „Text kopieren“ kopieren und mit ⌘V einfügen"
+          }
+        }
+      }
+    },
+    "Reply opened in Mail: paste the text from the clipboard with ⌘V" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antwort in Mail geöffnet: Text liegt in der Zwischenablage, mit ⌘V einfügen"
+          }
+        }
+      }
+    },
+    "Reply opened in Mail: write it there" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antwort in Mail geöffnet: Schreib sie dort"
+          }
+        }
+      }
+    },
+    "Restart Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit neu starten"
+          }
+        }
+      }
+    },
+    "Restricted" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eingeschränkt"
+          }
+        }
+      }
+    },
+    "Result unknown" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ergebnis unbekannt"
+          }
+        }
+      }
+    },
+    "Result: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ergebnis: %@"
+          }
+        }
+      }
+    },
+    "Return asks Orbit; the arrow keys select a result." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeilenschalter fragt Orbit, Pfeiltasten wählen ein Ergebnis."
+          }
+        }
+      }
+    },
+    "Return sends the message." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeilenschalter sendet die Nachricht."
+          }
+        }
+      }
+    },
+    "Run" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausführen"
+          }
+        }
+      }
+    },
+    "Run (⌘↩)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausführen (⌘↩)"
+          }
+        }
+      }
+    },
+    "Run shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurzbefehl ausführen"
+          }
+        }
+      }
+    },
+    "Running" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läuft"
+          }
+        }
+      }
+    },
+    "Running %@…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Führe %@ aus…"
+          }
+        }
+      }
+    },
+    "Running shortcut…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Führe Kurzbefehl aus…"
+          }
+        }
+      }
+    },
+    "Running…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird ausgeführt …"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sichern"
+          }
+        }
+      }
+    },
+    "Saved in Calendar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Kalender gespeichert"
+          }
+        }
+      }
+    },
+    "Saved in keychain" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Schlüsselbund gespeichert"
+          }
+        }
+      }
+    },
+    "Saved in Reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Erinnerungen gespeichert"
+          }
+        }
+      }
+    },
+    "Screenshot" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildschirmfoto"
+          }
+        }
+      }
+    },
+    "Search and read mail and open reply drafts in Mail. Orbit never sends mail by itself." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mails durchsuchen und lesen und Antwortentwürfe in Mail öffnen. Orbit verschickt nie selbst eine Mail."
+          }
+        }
+      }
+    },
+    "Search and read notes and, after you confirm, create new ones." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notizen durchsuchen und lesen und nach deiner Bestätigung neue Notizen anlegen."
+          }
+        }
+      }
+    },
+    "Search contacts" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakte suchen"
+          }
+        }
+      }
+    },
+    "Search files" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dateien suchen"
+          }
+        }
+      }
+    },
+    "Search mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mails suchen"
+          }
+        }
+      }
+    },
+    "Search notes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notizen suchen"
+          }
+        }
+      }
+    },
+    "Search photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotos suchen"
+          }
+        }
+      }
+    },
+    "Search results" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suchergebnisse"
+          }
+        }
+      }
+    },
+    "Searching contacts…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durchsuche Kontakte…"
+          }
+        }
+      }
+    },
+    "Searching files…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durchsuche Dateien…"
+          }
+        }
+      }
+    },
+    "Searching mail…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durchsuche E-Mails…"
+          }
+        }
+      }
+    },
+    "Searching notes…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durchsuche Notizen…"
+          }
+        }
+      }
+    },
+    "Searching photos…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suche Fotos…"
+          }
+        }
+      }
+    },
+    "Select All" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles auswählen"
+          }
+        }
+      }
+    },
+    "Sends your input to Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sendet die Eingabe an Orbit"
+          }
+        }
+      }
+    },
+    "Server address" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server-Adresse"
+          }
+        }
+      }
+    },
+    "Set" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellen"
+          }
+        }
+      }
+    },
+    "Set Up Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbit einrichten"
+          }
+        }
+      }
+    },
+    "Settings…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen…"
+          }
+        }
+      }
+    },
+    "Setup…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einrichtung…"
+          }
+        }
+      }
+    },
+    "Shortcut" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurzbefehl"
+          }
+        }
+      }
+    },
+    "Show %lld More" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld weitere anzeigen"
+          }
+        }
+      }
+    },
+    "Show a photo you click in Orbit in the Photos app." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Foto, auf das du in Orbit klickst, in der App Fotos zeigen."
+          }
+        }
+      }
+    },
+    "Show events" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termine anzeigen"
+          }
+        }
+      }
+    },
+    "Show events and, after you confirm, create new ones. Orbit needs full access for this." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termine anzeigen und nach deiner Bestätigung neue Termine anlegen. Dafür braucht Orbit Vollzugriff."
+          }
+        }
+      }
+    },
+    "Show in Calendar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Kalender zeigen"
+          }
+        }
+      }
+    },
+    "Show in Finder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Finder zeigen"
+          }
+        }
+      }
+    },
+    "Show in Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Mail zeigen"
+          }
+        }
+      }
+    },
+    "Show in Photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Fotos zeigen"
+          }
+        }
+      }
+    },
+    "Show in Reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Erinnerungen zeigen"
+          }
+        }
+      }
+    },
+    "Show Less" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weniger anzeigen"
+          }
+        }
+      }
+    },
+    "Show Permissions…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berechtigungen zeigen …"
+          }
+        }
+      }
+    },
+    "Show reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerungen anzeigen"
+          }
+        }
+      }
+    },
+    "Show reminders and, after you confirm, create new ones. Orbit needs full access for this." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerungen anzeigen und nach deiner Bestätigung neue Erinnerungen anlegen. Dafür braucht Orbit Vollzugriff."
+          }
+        }
+      }
+    },
+    "Showing “%@” in Finder…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeige „%@“ im Finder…"
+          }
+        }
+      }
+    },
+    "Shown in Finder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Finder gezeigt"
+          }
+        }
+      }
+    },
+    "Shows the event in Calendar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt den Termin im Kalender"
+          }
+        }
+      }
+    },
+    "Shows the file in Finder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt die Datei im Finder"
+          }
+        }
+      }
+    },
+    "Shows the last chat again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt den letzten Chat wieder an."
+          }
+        }
+      }
+    },
+    "Shows the photo in Photos" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt das Foto in Fotos"
+          }
+        }
+      }
+    },
+    "Shows the reminder in Reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt die Erinnerung in Erinnerungen"
+          }
+        }
+      }
+    },
+    "Sign in with your Claude account. Signing in happens in your browser, through Anthropic." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melde dich mit deinem Claude-Konto an. Die Anmeldung läuft im Browser über Anthropic."
+          }
+        }
+      }
+    },
+    "Sign In…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anmelden …"
+          }
+        }
+      }
+    },
+    "Sign-in was not completed. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Anmeldung wurde nicht abgeschlossen. Versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "Signing in through your browser…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anmeldung im Browser läuft …"
+          }
+        }
+      }
+    },
+    "Skip" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überspringen"
+          }
+        }
+      }
+    },
+    "Sonnet: balanced (default)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonnet: ausgewogen (Standard)"
+          }
+        }
+      }
+    },
+    "Sound" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton"
+          }
+        }
+      }
+    },
+    "Sound muted" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton ausgeschaltet"
+          }
+        }
+      }
+    },
+    "Sound off" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton aus"
+          }
+        }
+      }
+    },
+    "Sound on" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton an"
+          }
+        }
+      }
+    },
+    "Sound unmuted" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton eingeschaltet"
+          }
+        }
+      }
+    },
+    "Space" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leertaste"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn"
+          }
+        }
+      }
+    },
+    "Start a new email" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue E-Mail beginnen"
+          }
+        }
+      }
+    },
+    "Started a new email" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue E-Mail begonnen"
+          }
+        }
+      }
+    },
+    "Startup" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        }
+      }
+    },
+    "Status unavailable" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status nicht verfügbar"
+          }
+        }
+      }
+    },
+    "Step %1$lld of %2$lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schritt %1$lld von %2$lld"
+          }
+        }
+      }
+    },
+    "Stop Answer" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antwort stoppen"
+          }
+        }
+      }
+    },
+    "Stop Answer (Esc)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antwort stoppen (Esc)"
+          }
+        }
+      }
+    },
+    "Stopped, result unknown" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestoppt, Ergebnis unbekannt"
+          }
+        }
+      }
+    },
+    "Storage location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicherort"
+          }
+        }
+      }
+    },
+    "Subject:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betreff:"
+          }
+        }
+      }
+    },
+    "Suggestions" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorschläge"
+          }
+        }
+      }
+    },
+    "Switch" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umschalten"
+          }
+        }
+      }
+    },
+    "Switch between the light and dark appearance after you confirm." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach deiner Bestätigung zwischen hellem und dunklem Erscheinungsbild umschalten."
+          }
+        }
+      }
+    },
+    "System" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        }
+      }
+    },
+    "System Events" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System Events"
+          }
+        }
+      }
+    },
+    "System Settings…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systemeinstellungen …"
+          }
+        }
+      }
+    },
+    "Test Connection" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung testen"
+          }
+        }
+      }
+    },
+    "Text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text"
+          }
+        }
+      }
+    },
+    "The action above is waiting for your confirmation: ⌘↩ runs it, ⌘. cancels it." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Aktion oben wartet auf deine Bestätigung: ⌘↩ führt sie aus, ⌘. bricht sie ab."
+          }
+        }
+      }
+    },
+    "The answer was cut off because it reached the maximum length." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Antwort wurde abgeschnitten, weil sie die maximale Länge erreicht hat."
+          }
+        }
+      }
+    },
+    "The Anthropic API cannot be reached. Check your internet connection." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Anthropic-API ist nicht erreichbar. Prüfe deine Internetverbindung."
+          }
+        }
+      }
+    },
+    "The API key could not be read from the keychain. Allow Orbit access and try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der API-Schlüssel konnte nicht aus dem Schlüsselbund gelesen werden. Erlaube Orbit den Zugriff und versuche es erneut."
+          }
+        }
+      }
+    },
+    "The API key was rejected. Check it in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der API-Schlüssel wurde abgelehnt. Prüfe ihn in den Einstellungen."
+          }
+        }
+      }
+    },
+    "The assistant finds files, mail and notes and drafts replies for you." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Assistent findet Dateien, Mails und Notizen und entwirft Antworten für dich."
+          }
+        }
+      }
+    },
+    "The Calendar app could not be opened." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die App „Kalender“ konnte nicht geöffnet werden."
+          }
+        }
+      }
+    },
+    "The chat history could not be deleted. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Verlauf konnte nicht gelöscht werden. Versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "The connection could not be established." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Verbindung konnte nicht hergestellt werden."
+          }
+        }
+      }
+    },
+    "The connection to the provider was interrupted. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Verbindung zum Anbieter wurde unterbrochen. Bitte versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "The draft could not be shown in Mail." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Entwurf konnte nicht in Mail gezeigt werden."
+          }
+        }
+      }
+    },
+    "The draft is no longer open in Mail. If you saved it, you’ll find it in “Drafts”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Entwurf ist in Mail nicht mehr geöffnet. Wenn du ihn gesichert hast, findest du ihn unter „Entwürfe“."
+          }
+        }
+      }
+    },
+    "The email “%@” could not be opened in Mail." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die E-Mail „%@“ konnte nicht in Mail geöffnet werden."
+          }
+        }
+      }
+    },
+    "The full answer is in the chat." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die ganze Antwort steht im Chat."
+          }
+        }
+      }
+    },
+    "The key could not be removed." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Schlüssel konnte nicht entfernt werden."
+          }
+        }
+      }
+    },
+    "The key could not be saved in the keychain." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Schlüssel konnte nicht im Schlüsselbund gespeichert werden."
+          }
+        }
+      }
+    },
+    "The keychain could not be read." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Schlüsselbund konnte nicht gelesen werden."
+          }
+        }
+      }
+    },
+    "the language model" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "das Sprachmodell"
+          }
+        }
+      }
+    },
+    "the local model" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "das lokale Modell"
+          }
+        }
+      }
+    },
+    "The model “%@” cannot use tools. Choose a model with tool support in Settings, for example gpt-oss or qwen3." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell „%@“ kann keine Werkzeuge verwenden. Wähle in den Einstellungen ein Modell mit Werkzeug-Unterstützung, z. B. gpt-oss oder qwen3."
+          }
+        }
+      }
+    },
+    "The model “%@” is not available. Choose a different model in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell „%@“ ist nicht verfügbar. Wähle in den Einstellungen ein anderes Modell."
+          }
+        }
+      }
+    },
+    "The model “%@” is not installed on this Mac. Download it in Ollama or LM Studio, or choose a different model in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell „%@“ ist auf diesem Mac nicht installiert. Lade es in Ollama oder LM Studio oder wähle in den Einstellungen ein anderes Modell."
+          }
+        }
+      }
+    },
+    "The model declined this request." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell hat diese Anfrage abgelehnt."
+          }
+        }
+      }
+    },
+    "The model declined this request. Start a new chat to continue." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell hat diese Anfrage abgelehnt. Starte einen neuen Chat, um fortzufahren."
+          }
+        }
+      }
+    },
+    "The model did not return an answer." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell hat keine Antwort geliefert."
+          }
+        }
+      }
+    },
+    "The model reached its output limit before it could answer." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Modell hat sein Ausgabelimit erreicht, bevor es antworten konnte."
+          }
+        }
+      }
+    },
+    "The note “%@” could not be opened in Notes." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Notiz „%@“ konnte nicht in Notizen geöffnet werden."
+          }
+        }
+      }
+    },
+    "The note “%@” was not found in Notes. It may have been deleted." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Notiz „%@“ wurde in Notizen nicht gefunden. Vielleicht wurde sie gelöscht."
+          }
+        }
+      }
+    },
+    "The Photos app could not be opened." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die App „Fotos“ konnte nicht geöffnet werden."
+          }
+        }
+      }
+    },
+    "the provider" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "den Anbieter"
+          }
+        }
+      }
+    },
+    "The provider is not responding. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Anbieter antwortet nicht. Bitte versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "The provider ran into an error. Please try again later." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Anbieter ist ein Fehler aufgetreten. Bitte versuche es später noch einmal."
+          }
+        }
+      }
+    },
+    "The provider rejected the request. Check the model and your settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Anfrage wurde vom Anbieter abgelehnt. Prüfe Modell und Einstellungen."
+          }
+        }
+      }
+    },
+    "The provider’s response was incomplete. Please try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Antwort des Anbieters war unvollständig. Bitte versuche es noch einmal."
+          }
+        }
+      }
+    },
+    "The Reminders app could not be opened." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die App „Erinnerungen“ konnte nicht geöffnet werden."
+          }
+        }
+      }
+    },
+    "The selected model cannot use tools. Choose a model with tool support in Settings, for example gpt-oss or qwen3." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das gewählte Modell kann keine Werkzeuge verwenden. Wähle in den Einstellungen ein Modell mit Werkzeug-Unterstützung, z. B. gpt-oss oder qwen3."
+          }
+        }
+      }
+    },
+    "The server %@ cannot be reached. Check the address in Settings and your network connection." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Server %@ ist nicht erreichbar. Prüfe die Adresse in den Einstellungen und deine Netzwerkverbindung."
+          }
+        }
+      }
+    },
+    "The server address in Settings is invalid." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Server-Adresse in den Einstellungen ist ungültig."
+          }
+        }
+      }
+    },
+    "The server cannot be reached. Check the address in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Server ist nicht erreichbar. Prüfe die Adresse in den Einstellungen."
+          }
+        }
+      }
+    },
+    "The server on this Mac (%@) cannot be reached. Start it (for example Ollama or LM Studio) and try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Server auf diesem Mac (%@) ist nicht erreichbar. Starte ihn, z. B. Ollama oder LM Studio, und versuche es erneut."
+          }
+        }
+      }
+    },
+    "The service is overloaded right now. Please try again in a moment." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Dienst ist gerade überlastet. Bitte versuche es gleich noch einmal."
+          }
+        }
+      }
+    },
+    "The setup takes about a minute. You can skip any step." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Einrichtung dauert etwa eine Minute. Jeden Schritt kannst du überspringen."
+          }
+        }
+      }
+    },
+    "The status cannot be checked right now." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Status lässt sich gerade nicht prüfen."
+          }
+        }
+      }
+    },
+    "The text could not be copied to the clipboard." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Text konnte nicht in die Zwischenablage kopiert werden."
+          }
+        }
+      }
+    },
+    "There is a billing problem with the provider. Check your account with the provider." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Anbieter gibt es ein Abrechnungsproblem. Prüfe dein Konto beim Anbieter."
+          }
+        }
+      }
+    },
+    "This action cannot be undone." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Aktion lässt sich nicht rückgängig machen."
+          }
+        }
+      }
+    },
+    "This API key does not have access to the selected model." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieser API-Schlüssel hat keinen Zugriff auf das gewählte Modell."
+          }
+        }
+      }
+    },
+    "This content was sent to the provider for the answer." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Inhalte wurden für die Antwort an den Anbieter gesendet."
+          }
+        }
+      }
+    },
+    "This conversation has become too long for the model. Start a new chat." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Unterhaltung ist zu lang für das Modell geworden. Starte einen neuen Chat."
+          }
+        }
+      }
+    },
+    "This conversation has become too long. Start a new chat." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Unterhaltung ist zu lang geworden. Starte einen neuen Chat."
+          }
+        }
+      }
+    },
+    "This link is not from your message. Orbit opens it only when you agree, so check where it leads." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieser Link stammt nicht aus deiner Nachricht. Orbit öffnet ihn erst, wenn du zustimmst. Prüfe, wohin er führt."
+          }
+        }
+      }
+    },
+    "This link is not from your message. Orbit starts the email only when you agree. Nothing is sent; you do that in your mail app." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieser Link stammt nicht aus deiner Nachricht. Orbit beginnt die E-Mail erst, wenn du zustimmst. Gesendet wird nichts, das machst du im Mail-Programm."
+          }
+        }
+      }
+    },
+    "This shortcut opens Orbit from anywhere, like Spotlight. Click the field to record a different one." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit diesem Kürzel öffnest du Orbit von überall, wie Spotlight. Klicke auf das Feld, um ein anderes aufzunehmen."
+          }
+        }
+      }
+    },
+    "This version of Claude Code is too old for Orbit. Update the Claude app or Claude Code, then try again." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Version von Claude Code ist zu alt für Orbit. Aktualisiere die Claude-App oder Claude Code und versuche es dann erneut."
+          }
+        }
+      }
+    },
+    "Through Mail" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über Mail"
+          }
+        }
+      }
+    },
+    "Through Spotlight" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über Spotlight"
+          }
+        }
+      }
+    },
+    "Timed out" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeitüberschreitung"
+          }
+        }
+      }
+    },
+    "Timed out, result unknown" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeitüberschreitung, Ergebnis unbekannt"
+          }
+        }
+      }
+    },
+    "Title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
+        }
+      }
+    },
+    "To" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empfänger"
+          }
+        }
+      }
+    },
+    "To open Orbit with ⌘ Space, first turn off Spotlight’s shortcut: System Settings > Keyboard > Keyboard Shortcuts > Spotlight > “Show Spotlight search”. Then you can record ⌘ Space here." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um Orbit mit ⌘ Leertaste zu öffnen, deaktiviere zuerst das Spotlight-Kürzel: Systemeinstellungen > Tastatur > Tastaturkurzbefehle > Spotlight > „Spotlight-Suche einblenden“. Danach kannst du ⌘ Leertaste hier aufnehmen."
+          }
+        }
+      }
+    },
+    "To:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An:"
+          }
+        }
+      }
+    },
+    "Too many requests in a short time. Please try again in %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu viele Anfragen in kurzer Zeit. Bitte versuche es in %@ noch einmal."
+          }
+        }
+      }
+    },
+    "Too many requests in a short time. Please try again in a moment." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu viele Anfragen in kurzer Zeit. Bitte versuche es gleich noch einmal."
+          }
+        }
+      }
+    },
+    "Tools" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Werkzeuge"
+          }
+        }
+      }
+    },
+    "Try Again" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erneut versuchen"
+          }
+        }
+      }
+    },
+    "Try Again (⌘R)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erneut versuchen (⌘R)"
+          }
+        }
+      }
+    },
+    "Turn on Orbit in System Settings > Privacy & Security > Full Disk Access, then restart Orbit." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schalte Orbit in den Systemeinstellungen unter Datenschutz & Sicherheit > Festplattenvollzugriff ein und starte Orbit danach neu."
+          }
+        }
+      }
+    },
+    "Turned off in Settings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In den Einstellungen deaktiviert"
+          }
+        }
+      }
+    },
+    "Turned on for all apps." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für alle Apps eingeschaltet."
+          }
+        }
+      }
+    },
+    "Type to search; the Up Arrow continues the last chat." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippen sucht, Pfeil nach oben setzt den letzten Chat fort."
+          }
+        }
+      }
+    },
+    "Undo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widerrufen"
+          }
+        }
+      }
+    },
+    "Unencrypted connection: the key and content would be sent in plain text. Use it only for servers on this Mac or in your local network." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unverschlüsselte Verbindung: Schlüssel und Inhalte würden im Klartext übertragen. Nur für Server auf diesem Mac oder im lokalen Netz verwenden."
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unbekannt"
+          }
+        }
+      }
+    },
+    "Unread" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ungelesen"
+          }
+        }
+      }
+    },
+    "Usage" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontingent"
+          }
+        }
+      }
+    },
+    "Use Anyway" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trotzdem verwenden"
+          }
+        }
+      }
+    },
+    "Use at least one of the keys ⌘, ⌥ or ⌃." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwende mindestens eine der Tasten ⌘, ⌥ oder ⌃."
+          }
+        }
+      }
+    },
+    "Use the items selected in Finder as context for your question." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die im Finder ausgewählten Objekte als Kontext für deine Frage verwenden."
+          }
+        }
+      }
+    },
+    "Use the selected text and the window title of the frontmost app as context for your question. Password fields are never read." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Markierten Text und den Fenstertitel der vordersten App als Kontext für deine Frage verwenden. Passwortfelder liest Orbit nie."
+          }
+        }
+      }
+    },
+    "Use the selection when opening" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auswahl beim Öffnen übernehmen"
+          }
+        }
+      }
+    },
+    "Use This Copy" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Kopie verwenden"
+          }
+        }
+      }
+    },
+    "Uses your Claude subscription (Pro or Max) through Claude Code, no API key needed. Usage counts toward your subscription’s limits. Orbit never sees your Claude sign-in." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutzt dein Claude-Abo (Pro oder Max) über Claude Code, ohne API-Schlüssel. Die Nutzung zählt zu deinem Abo-Kontingent. Orbit sieht deine Claude-Anmeldung nie."
+          }
+        }
+      }
+    },
+    "Uses your Claude subscription (Pro or Max) through Claude Code. Usage counts toward your subscription’s limits; Orbit never sees your sign-in." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutzt dein Claude-Abo (Pro oder Max) über Claude Code. Die Nutzung zählt zu deinem Abo-Kontingent; Orbit sieht deine Anmeldung nie."
+          }
+        }
+      }
+    },
+    "Video" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        }
+      }
+    },
+    "Volume (0 to 100)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lautstärke (0 bis 100)"
+          }
+        }
+      }
+    },
+    "Volume set to %lld%%" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lautstärke auf %lld %% gestellt"
+          }
+        }
+      }
+    },
+    "Volume set to %lld%%, sound off" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lautstärke auf %lld %% gestellt, Ton aus"
+          }
+        }
+      }
+    },
+    "Volume: %lld%%" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lautstärke: %lld %%"
+          }
+        }
+      }
+    },
+    "Waiting for macOS…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warte auf macOS …"
+          }
+        }
+      }
+    },
+    "Warning: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warnung: %@"
+          }
+        }
+      }
+    },
+    "Website" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Website"
+          }
+        }
+      }
+    },
+    "Welcome to Orbit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willkommen bei Orbit"
+          }
+        }
+      }
+    },
+    "When you open Orbit, it takes the items selected in Finder or the text selected in the app you come from as context for your question. The context appears above the input field; remove it with its × or with ⌫ in the empty input field. Orbit never reads password fields or password apps. This needs “Automation: Finder” and “Accessibility”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnest du Orbit, übernimmt es die im Finder ausgewählten Objekte oder den markierten Text der App, aus der du kommst, als Kontext für deine Frage. Der Kontext steht oben im Eingabefeld und lässt sich mit dem × oder mit ⌫ im leeren Eingabefeld entfernen. Passwortfelder und Passwort-Apps liest Orbit nie. Dafür braucht Orbit „Automation: Finder“ und „Bedienungshilfen“."
+          }
+        }
+      }
+    },
+    "When you open Orbit, it takes your current selection as a chip above the input field; it reaches the language model only with your message. To turn this off: Settings > General > “Use the selection when opening”." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Öffnen übernimmt Orbit deine aktuelle Auswahl als Chip über dem Eingabefeld; an das Sprachmodell geht sie nur mit deiner Nachricht. Abschalten: Einstellungen > Allgemein > „Auswahl beim Öffnen übernehmen“."
+          }
+        }
+      }
+    },
+    "With selection: “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Auswahl: „%@“"
+          }
+        }
+      }
+    },
+    "With selection: “%1$@” (%2$@)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Auswahl: „%1$@“ (%2$@)"
+          }
+        }
+      }
+    },
+    "With selection: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Auswahl: %@"
+          }
+        }
+      }
+    },
+    "With selection: %1$@ and %2$lld more" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Auswahl: %1$@ und %2$lld weitere"
+          }
+        }
+      }
+    },
+    "With the Claude subscription, Claude Code connects to Anthropic. Orbit itself makes no connection to the internet." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit dem Claude-Abo verbindet sich Claude Code mit Anthropic. Orbit selbst baut keine Verbindung ins Internet auf."
+          }
+        }
+      }
+    },
+    "With time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Uhrzeit"
+          }
+        }
+      }
+    },
+    "With warning" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Warnung"
+          }
+        }
+      }
+    },
+    "Without this access, Orbit takes neither selected text nor window titles; no tool is turned off. You can allow it later in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne diesen Zugriff übernimmt Orbit weder markierten Text noch Fenstertitel; kein Werkzeug wird abgeschaltet. Du kannst ihn später in den Einstellungen erlauben."
+          }
+        }
+      }
+    },
+    "Without this access, Orbit takes no selection from Finder; no tool is turned off. You can allow it later in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne diesen Zugriff übernimmt Orbit keine Auswahl aus dem Finder; kein Werkzeug wird abgeschaltet. Du kannst ihn später in den Einstellungen erlauben."
+          }
+        }
+      }
+    },
+    "Without this access, the related tools stay off. You can allow it later in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne diesen Zugriff bleiben die zugehörigen Werkzeuge aus. Du kannst ihn später in den Einstellungen erlauben."
+          }
+        }
+      }
+    },
+    "You can allow it in System Settings > Privacy & Security > %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlauben kannst du es in den Systemeinstellungen unter Datenschutz & Sicherheit > %@."
+          }
+        }
+      }
+    },
+    "You can change everything later in Settings. The setup is always available from Orbit’s menu in the menu bar." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles lässt sich später in den Einstellungen ändern. Die Einrichtung findest du jederzeit im Menü von Orbit in der Menüleiste."
+          }
+        }
+      }
+    },
+    "You can get an API key in the Anthropic Console. Orbit stores it in your keychain." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den API-Schlüssel erhältst du in der Anthropic Console. Orbit speichert ihn im Schlüsselbund."
+          }
+        }
+      }
+    },
+    "You have used %1$lld%% of your Claude usage limit (%2$@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast %1$lld %% deines Claude-Kontingents genutzt (%2$@)."
+          }
+        }
+      }
+    },
+    "You have used %lld%% of your Claude usage limit." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast %lld %% deines Claude-Kontingents genutzt."
+          }
+        }
+      }
+    },
+    "You Stay in Control" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du behältst die Kontrolle"
+          }
+        }
+      }
+    },
+    "You turn on Full Disk Access in System Settings; macOS does not ask for it." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festplattenvollzugriff schaltest du in den Systemeinstellungen ein; macOS fragt nicht danach."
+          }
+        }
+      }
+    },
+    "You: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du: %@"
+          }
+        }
+      }
+    },
+    "Your chats are stored only on this Mac." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Chats werden nur lokal auf diesem Mac gespeichert."
+          }
+        }
+      }
+    },
+    "Your Claude subscription does not include the selected model. Choose a different model in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Claude-Abo hat keinen Zugriff auf das gewählte Modell. Wähle in den Einstellungen ein anderes Modell."
+          }
+        }
+      }
+    },
+    "Your Claude subscription’s usage limit has been reached." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Nutzungslimit deines Claude-Abos ist erreicht."
+          }
+        }
+      }
+    },
+    "Your Claude subscription’s usage limit has been reached. It resets on %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Nutzungslimit deines Claude-Abos ist erreicht. Es wird am %@ zurückgesetzt."
+          }
+        }
+      }
+    },
+    "YYYY-MM-DD HH:MM" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "JJJJ-MM-TT HH:MM"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

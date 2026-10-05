@@ -1,0 +1,19 @@
+259
+From: Lisa Beispiel <lisa.beispiel@example.com>
+To: erika@example.org
+Subject: Alte Notiz zum Projekt
+Date: Tue, 29 Sep 2026 11:00:00 +0200
+Message-ID: <orbit-fake-301@example.com>
+Content-Type: text/plain; charset=utf-8
+
+Diese Nachricht liegt im Papierkorb.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790672410</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

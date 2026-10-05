@@ -1,0 +1,19 @@
+227
+From: Gewinnspiel <win@spam.example>
+To: erika@example.org
+Subject: Sie haben gewonnen!
+Date: Sun, 27 Sep 2026 10:00:00 +0200
+Message-ID: <orbit-fake-401@spam.example>
+Content-Type: text/plain; charset=utf-8
+
+Klicken Sie hier.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790496010</integer>
+	<key>flags</key>
+	<integer>0</integer>
+</dict>
+</plist>

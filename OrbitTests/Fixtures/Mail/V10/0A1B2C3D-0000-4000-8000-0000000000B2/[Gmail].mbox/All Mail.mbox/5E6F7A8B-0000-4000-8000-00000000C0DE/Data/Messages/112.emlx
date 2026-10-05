@@ -1,0 +1,19 @@
+294
+From: Lisa Beispiel <lisa.beispiel@firma.example>
+To: Erika Mustermann <erika.mustermann@firma.example>
+Subject: Quartalszahlen Q3
+Date: Tue, 29 Sep 2026 10:00:00 +0200
+Message-ID: <orbit-fake-111@firma.example>
+Content-Type: text/plain; charset=utf-8
+
+Die Quartalszahlen liegen im Teamordner.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790668810</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>

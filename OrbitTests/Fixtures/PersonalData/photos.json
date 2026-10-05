@@ -1,0 +1,42 @@
+{
+  "_comment": "Invented photos for Orbit's DEBUG fake-data mode (ORBIT_DEBUG_FAKE_PERSONAL_DATA) and tests. Nothing here is real: there are no images, the thumbnails are drawn at runtime. 'day' counts from the launch day (0 = today, -1 = yesterday), times are local; 'date' is absolute. See Orbit/App/FakePhotoData.swift.",
+  "access": "authorized",
+  "automation": "granted",
+  "albums": [
+    {"id": "orbit-fake-album-see", "title": "Wochenende am See"},
+    {"id": "orbit-fake-album-sommer", "title": "Sommerurlaub 2025"},
+    {"id": "orbit-fake-album-familie", "title": "Familie"},
+    {"id": "orbit-fake-album-feier", "title": "Familienfeier 2024"},
+    {"id": "orbit-fake-album-rezepte", "title": "Rezepte"}
+  ],
+  "photos": [
+    {"id": "ORBIT-FAKE-0001/L0/001", "day": 0, "time": "09:14", "type": "screenshot", "width": 2940, "height": 1912, "color": "#5B8DEF"},
+    {"id": "ORBIT-FAKE-0002/L0/001", "day": 0, "time": "11:02", "type": "screenshot", "width": 2940, "height": 1912, "color": "#8E7DBE"},
+    {"id": "ORBIT-FAKE-0003/L0/001", "day": 0, "time": "08:05", "type": "photo", "color": "#E9C46A"},
+    {"id": "ORBIT-FAKE-0004/L0/001", "day": -1, "time": "19:30", "type": "photo", "favorite": true, "color": "#F4A261"},
+    {"id": "ORBIT-FAKE-0005/L0/001", "day": -1, "time": "19:42", "type": "video", "duration": 38, "color": "#264653"},
+    {"id": "ORBIT-FAKE-0006/L0/001", "day": -2, "time": "21:10", "type": "photo", "hidden": true, "color": "#000000"},
+    {"id": "ORBIT-FAKE-0007/L0/001", "day": -3, "time": "18:20", "type": "photo", "favorite": true, "albums": ["Familie"], "color": "#D4A373"},
+    {"id": "ORBIT-FAKE-0008/L0/001", "day": -3, "time": "18:25", "type": "photo", "albums": ["Familie"], "width": 3024, "height": 4032, "color": "#CCD5AE"},
+    {"id": "ORBIT-FAKE-0009/L0/001", "day": -3, "time": "18:31", "type": "livePhoto", "albums": ["Familie"], "color": "#FAEDCD"},
+    {"id": "ORBIT-FAKE-0010/L0/001", "day": -7, "time": "10:12", "type": "photo", "albums": ["Wochenende am See"], "color": "#2A9D8F"},
+    {"id": "ORBIT-FAKE-0011/L0/001", "day": -7, "time": "10:15", "type": "photo", "favorite": true, "albums": ["Wochenende am See"], "color": "#48CAE4"},
+    {"id": "ORBIT-FAKE-0012/L0/001", "day": -7, "time": "13:40", "type": "livePhoto", "albums": ["Wochenende am See"], "color": "#90E0EF"},
+    {"id": "ORBIT-FAKE-0013/L0/001", "day": -7, "time": "14:05", "type": "video", "duration": 42, "albums": ["Wochenende am See"], "color": "#0077B6"},
+    {"id": "ORBIT-FAKE-0014/L0/001", "day": -7, "time": "18:55", "type": "photo", "favorite": true, "width": 8064, "height": 2016, "albums": ["Wochenende am See"], "color": "#E76F51"},
+    {"id": "ORBIT-FAKE-0015/L0/001", "day": -6, "time": "09:30", "type": "photo", "albums": ["Wochenende am See"], "color": "#83C5BE"},
+    {"id": "ORBIT-FAKE-0016/L0/001", "day": -6, "time": "11:45", "type": "photo", "width": 3024, "height": 4032, "albums": ["Wochenende am See"], "color": "#006D77"},
+    {"id": "ORBIT-FAKE-0017/L0/001", "day": -6, "time": "16:20", "type": "video", "duration": 75, "albums": ["Wochenende am See"], "color": "#023E8A"},
+    {"id": "ORBIT-FAKE-0018/L0/001", "day": -14, "time": "12:30", "type": "photo", "albums": ["Rezepte"], "color": "#C1121F"},
+    {"id": "ORBIT-FAKE-0019/L0/001", "day": -30, "time": "15:00", "type": "photo", "inCloud": true, "color": "#6C757D"},
+    {"id": "ORBIT-FAKE-0020/L0/001", "date": "2025-07-12T09:40", "type": "photo", "albums": ["Sommerurlaub 2025"], "color": "#FFB703"},
+    {"id": "ORBIT-FAKE-0021/L0/001", "date": "2025-07-12T18:42", "type": "photo", "favorite": true, "albums": ["Sommerurlaub 2025"], "color": "#FB8500"},
+    {"id": "ORBIT-FAKE-0022/L0/001", "date": "2025-07-13T11:05", "type": "livePhoto", "albums": ["Sommerurlaub 2025"], "color": "#8ECAE6"},
+    {"id": "ORBIT-FAKE-0023/L0/001", "date": "2025-07-13T20:15", "type": "video", "duration": 95, "albums": ["Sommerurlaub 2025"], "color": "#219EBC"},
+    {"id": "ORBIT-FAKE-0024/L0/001", "date": "2025-07-14T07:30", "type": "photo", "favorite": true, "width": 8000, "height": 2000, "albums": ["Sommerurlaub 2025"], "color": "#FFD166"},
+    {"id": "ORBIT-FAKE-0025/L0/001", "date": "2025-07-15T16:00", "type": "photo", "albums": ["Sommerurlaub 2025"], "color": "#06D6A0"},
+    {"id": "ORBIT-FAKE-0026/L0/001", "date": "2025-07-18T12:00", "type": "photo", "color": "#118AB2"},
+    {"id": "ORBIT-FAKE-0027/L0/001", "date": "2024-12-24T18:00", "type": "photo", "favorite": true, "albums": ["Familienfeier 2024"], "color": "#9B2226"},
+    {"id": "ORBIT-FAKE-0028/L0/001", "date": "2024-12-24T18:30", "type": "video", "duration": 60, "albums": ["Familienfeier 2024"], "color": "#AE2012"}
+  ]
+}

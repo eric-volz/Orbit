@@ -1,0 +1,28 @@
+537
+Return-Path: <lisa.beispiel@example.com>
+From: Lisa Beispiel <lisa.beispiel@example.com>
+To: Erika Mustermann <erika@example.org>
+Subject: =?utf-8?Q?Projekt_Orbit_=E2=80=93_n=C3=A4chste_Schritte?=
+Date: Wed, 30 Sep 2026 14:02:00 +0200
+Message-ID: <orbit-fake-101@example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hallo Erika,
+
+k=C3=B6nnen wir uns am Donnerstag um 14 Uhr zum Projekt Orbit abstimmen? Ich =
+bringe die Quokka-Entw=C3=BCrfe mit.
+
+Viele Gr=C3=BC=C3=9Fe
+Lisa
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1790769730</integer>
+	<key>flags</key>
+	<integer>0</integer>
+</dict>
+</plist>

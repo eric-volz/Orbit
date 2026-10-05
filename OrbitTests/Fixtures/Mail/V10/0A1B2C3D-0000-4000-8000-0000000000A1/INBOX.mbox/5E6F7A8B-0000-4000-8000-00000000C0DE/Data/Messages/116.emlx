@@ -1,0 +1,19 @@
+254
+From: max.weber@weber-gmbh.example
+To: erika@example.org
+Subject: Angebot Fenster
+Date: Fri, 03 Jul 2026 09:30:00 +0200
+Message-ID: <orbit-fake-116@weber-gmbh.example>
+Content-Type: text/plain; charset=utf-8
+
+Hier ist das Angebot für die neuen Fenster.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date-received</key>
+	<integer>1783063810</integer>
+	<key>flags</key>
+	<integer>1</integer>
+</dict>
+</plist>
