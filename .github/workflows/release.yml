@@ -112,7 +112,7 @@ jobs:
           swift --version
 
       - name: Run the unit tests
-        run: Scripts/swiftpm.sh test
+        run: Scripts/swiftpm.sh test --no-parallel
 
       - name: Set up the Developer ID certificate and notary credentials
         if: steps.signing.outputs.signed == 'true'
