@@ -287,7 +287,8 @@ runner with the newest stable Xcode (change `runs-on` when GitHub retires that i
 2. **Takes the release notes** from the `CHANGELOG.md` section whose heading starts with `## <version>`. A release
    without such a section stops here with an error; a prerelease without one gets notes that GitHub generates from
    the commits.
-3. **Runs the unit tests** with `Scripts/swiftpm.sh test`.
+3. **Runs the unit tests** with `Scripts/swiftpm.sh test --no-parallel`. On the runner's three cores, parallel
+   `@MainActor` suites starve one another and tests that wait for a result time out; one after another they pass.
 4. **Builds** with `Scripts/build-app.sh release --universal`.
 5. **With the signing secrets:** signs with the Developer ID certificate from a temporary keychain, runs
    `Scripts/notarize.sh` and writes the SHA-256 checksum. The `Orbit.app.dSYM` is kept as a workflow artifact for

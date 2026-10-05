@@ -21,7 +21,13 @@ fixtures, the guarantees the unit tests keep, the opt-in ("gated") suites, and h
 ```sh
 Scripts/swiftpm.sh test                          # all unit tests
 Scripts/swiftpm.sh test --filter AgentLoop       # only tests whose name matches
+Scripts/swiftpm.sh test --no-parallel            # one test at a time, for slow machines and CI
 ```
+
+Swift Testing runs the tests in parallel. On a slow machine, such as a GitHub runner with three cores, the
+`@MainActor` suites then starve one another: tests that wait a few seconds for a result time out, and the latency
+tests miss their limits. Run them with `--no-parallel` there (the release workflow does); on a recent Mac the
+parallel run takes a few seconds, the serial one about half a minute.
 
 Always use [`Scripts/swiftpm.sh`](../Scripts/swiftpm.sh): with only the Command Line Tools installed, Swift Testing
 lies outside the default search paths, and the wrapper adds them (see

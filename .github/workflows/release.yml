@@ -111,8 +111,10 @@ jobs:
           xcodebuild -version
           swift --version
 
+      # Serially: on the runner's three cores, parallel @MainActor suites starve
+      # one another, and tests that wait a few seconds for a result time out.
       - name: Run the unit tests
-        run: Scripts/swiftpm.sh test
+        run: Scripts/swiftpm.sh test --no-parallel
 
       - name: Set up the Developer ID certificate and notary credentials
         if: steps.signing.outputs.signed == 'true'
