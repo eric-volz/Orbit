@@ -236,7 +236,7 @@ the model understands.
     - "Summarize the selected files" reads them. The chat notes "2 file names … sent".
     - Remove the chip with × before sending: the agent does not know the files.
     - Open Orbit again and press ⌫ in the empty input instead: the chip goes (VoiceOver: "Context removed: …").
-    - Select a key file (for example a `.pem`) together with a normal file: the chip reads "With selection: <file> ·
+    - Select a key file (for example a `.pem`) together with a normal file: the chip reads "With selection: &lt;file&gt; ·
       1 protected file left out", and the agent says one item was left out without naming it.
 3. **Selected text.** Select a paragraph in TextEdit, Safari or Mail and open Orbit: the chip reads "With
    selection: “…” (App)". "Translate this into French" uses exactly that text. Select a whole long document (⌘A in

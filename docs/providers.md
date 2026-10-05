@@ -430,7 +430,7 @@ reasoning effort in Settings → **Model** at any time; the next message in the 
 | What | Where |
 |---|---|
 | Provider, models, server addresses, reasoning effort, Claude Code's program path | The user defaults of `io.github.eric-volz.Orbit` (keys `providerKind`, `anthropicModel`, `anthropicBaseURL`, `openAIModel`, `openAIBaseURL`, `claudeCodeModel`, `claudeCodePath`, `reasoningEffort`) |
-| API keys | Only the login keychain, service `io.github.eric-volz.Orbit.credentials`, accounts `anthropic-api-key` and `openai-compatible-api-key`; new items are labeled "Orbit: <account>" |
+| API keys | Only the login keychain, service `io.github.eric-volz.Orbit.credentials`, accounts `anthropic-api-key` and `openai-compatible-api-key`; new items are labeled `Orbit: <account>` |
 | Claude sign-in | Stays with Claude Code; Orbit never reads or stores it |
 
 Each provider keeps its own model, server address and key, so switching back and forth does not lose them; the

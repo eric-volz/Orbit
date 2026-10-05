@@ -654,7 +654,7 @@ login keychain:
 
 - Service `<bundle id>.credentials` (`io.github.eric-volz.Orbit.credentials`), accounts `anthropic-api-key` and
   `openai-compatible-api-key`. The Claude subscription uses no key; its sign-in stays with Claude Code.
-- Items are added with `kSecAttrAccessibleAfterFirstUnlock` and the label "Orbit: <account>". Saving an empty value
+- Items are added with `kSecAttrAccessibleAfterFirstUnlock` and the label `Orbit: <account>`. Saving an empty value
   deletes the item. Values are trimmed.
 - API keys exist only here, never in UserDefaults, files or logs. The agent loop reads them off the main actor
   (keychain access can block).

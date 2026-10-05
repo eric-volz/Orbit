@@ -18,11 +18,11 @@ fixtures, the guarantees the unit tests keep, the opt-in ("gated") suites, and h
 
 ## Running the unit tests
 
-```sh
-Scripts/swiftpm.sh test                          # all unit tests
-Scripts/swiftpm.sh test --filter AgentLoop       # only tests whose name matches
-Scripts/swiftpm.sh test --no-parallel            # one test at a time, for slow machines and CI
-```
+| Command | Runs |
+|---|---|
+| `Scripts/swiftpm.sh test` | all unit tests |
+| `Scripts/swiftpm.sh test --filter AgentLoop` | only the tests whose name matches |
+| `Scripts/swiftpm.sh test --no-parallel` | one test at a time, for slow machines and CI |
 
 Swift Testing runs the tests in parallel. On a slow machine, such as a GitHub runner with three cores, the
 `@MainActor` suites then starve one another: tests that wait a few seconds for a result time out, and the latency
@@ -30,10 +30,11 @@ tests miss their limits. Run them with `--no-parallel` there (the release workfl
 parallel run takes a few seconds, the serial one about half a minute.
 
 The tests must pass in every language, region and time zone. The GitHub runner uses English (United States) and
-UTC, which a test written on a Mac set to another region may not expect. To run them that way on your Mac:
+UTC, which a test written on a Mac set to another region may not expect. To run them that way on your Mac, build the
+tests (the filter matches none, so nothing runs yet) and start the test runner with the runner's settings:
 
 ```sh
-Scripts/swiftpm.sh test --filter NoSuchTest      # builds the tests and runs none
+Scripts/swiftpm.sh test --filter NoSuchTest
 helper="$(dirname "$(xcrun --find swift)")/../libexec/swift/pm/swiftpm-testing-helper"
 TZ=UTC "$helper" --test-bundle-path .build/debug/OrbitPackageTests.xctest/Contents/MacOS/OrbitPackageTests \
     --testing-library swift-testing --no-parallel -AppleLocale en_US -AppleLanguages '(en-US)'

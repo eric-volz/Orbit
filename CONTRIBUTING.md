@@ -31,15 +31,16 @@ This guide explains how to set up the project, how changes get in, and the princ
 
 ## Development setup
 
-You need macOS 14 or later and either the Command Line Tools with Swift 6.x (`xcode-select --install`) or Xcode 16
-or later.
+You need macOS 15.2 or later and either the Command Line Tools with Swift 6.1 or later (`xcode-select --install`) or
+Xcode 16.3 or later; Orbit is developed and tested with Swift 6.3. Clone the repository, compile everything, run the
+unit tests, and build and open a debug build (`build/debug/Orbit.app`):
 
 ```sh
 git clone https://github.com/eric-volz/Orbit.git
 cd Orbit
-Scripts/swiftpm.sh build          # compile everything
-Scripts/swiftpm.sh test           # run the unit tests
-Scripts/build-app.sh debug        # build/debug/Orbit.app
+Scripts/swiftpm.sh build
+Scripts/swiftpm.sh test
+Scripts/build-app.sh debug
 open build/debug/Orbit.app
 ```
 
@@ -165,7 +166,8 @@ Markdown rules that keep a page right on GitHub and on the site (for example fou
 Open an issue with:
 
 - your **macOS version** and Mac (Apple silicon or Intel);
-- the **Orbit version** ("About Orbit" in the Orbit menu while Settings is open, or Get Info on `Orbit.app`);
+- the **Orbit version** ("About Orbit" in the Orbit menu while Settings is open, or Get Info on `Orbit.app`) and the
+  tag or commit you built it from (`git describe --tags --always` in your clone);
 - the **provider and model** you use (Claude subscription, Anthropic API or an OpenAI-compatible server, and the
   model name);
 - the **steps to reproduce**, what you expected and what happened instead;

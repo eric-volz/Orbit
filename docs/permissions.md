@@ -236,13 +236,15 @@ macOS ties privacy permissions to the app's code signature. This matters if you 
   across rebuilds:
 
     ```sh
-    Scripts/create-dev-cert.sh                                   # once
-    ORBIT_SIGN_IDENTITY="Orbit Development" Scripts/build-app.sh debug
+    Scripts/create-dev-cert.sh
+    ORBIT_SIGN_IDENTITY="Orbit Development" Scripts/build-app.sh release
     ```
 
     `Scripts/create-dev-cert.sh --remove` deletes the identity again.
 
-- **Release builds** are signed with a Developer ID and notarized. See [Releasing](releasing.md).
+- **Releases** have no prebuilt app for now, so every copy is one you built yourself and the two points above
+  apply. Once the project has a Developer ID, its downloads will be signed with it and notarized, and keep their
+  permissions across updates. See [Releasing](releasing.md).
 
 ## Resetting permissions
 

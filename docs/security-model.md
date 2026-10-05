@@ -454,8 +454,10 @@ asks for.
 `/usr/bin/osascript` and `/usr/bin/shortcuts` as child processes, searches and reads files across the user's home
 folder through Spotlight, and reads Mail's store through Spotlight when Full Disk Access is on. The App Sandbox would
 block or confine each of these. Instead, Orbit relies on macOS's privacy permissions (TCC) for every protected
-resource, on its own access policies (files, links, scripts) and on user confirmation for actions. Distribution
-builds are signed with a Developer ID and notarized; see [Releasing](releasing.md).
+resource, on its own access policies (files, links, scripts) and on user confirmation for actions. Releases are
+source only for now: users build Orbit themselves, signed ad hoc by default (or with their own development
+certificate) and always with the Hardened Runtime. Once the project has a Developer ID, distributed builds will be
+signed with it and notarized; see [Releasing](releasing.md).
 
 ## DEBUG-only automation
 

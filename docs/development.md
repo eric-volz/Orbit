@@ -25,10 +25,15 @@ data for end-to-end runs, and the coding conventions.
 
 ## Prerequisites
 
-- macOS 14 Sonoma or later, on Apple silicon or Intel.
+- macOS 15.2 or later, on Apple silicon or Intel. Orbit runs on macOS 14, but GRDB.swift and KeyboardShortcuts need
+  Swift 6.1, which comes with Xcode 16.3 and its Command Line Tools, and those need macOS 15.2.
 - One of:
-    - the Command Line Tools with Swift 6.x (`xcode-select --install`), or
-    - Xcode 16 or later.
+    - the Command Line Tools with Swift 6.1 or later (`xcode-select --install`), or
+    - Xcode 16.3 or later.
+
+    Orbit is developed and tested with Swift 6.3 (Xcode 26.4 or later, or its Command Line Tools); Swift 6.1 and 6.2
+    are not tested.
+
 - Optional, for trying Orbit against a model: a Claude subscription with the Claude app or Claude Code installed
   and signed in, an Anthropic API key, or an OpenAI-compatible server such as [Ollama](https://ollama.com) or
   LM Studio. You can also work entirely without a model by using [FakeLLMServer](#fakellmserver).
@@ -60,6 +65,11 @@ Always use the wrappers in `Scripts/` instead of calling `swift` directly: they 
 Command Line Tools-only Mac needs (see [The wrapper scripts](#the-wrapper-scripts)). With Xcode selected they
 behave exactly like plain `swift`.
 
+Many command examples in these pages have `#` comments. zsh, the default shell on macOS, treats `#` as the start of
+a comment only with `setopt interactivecomments` (add it to `~/.zshrc`). Without it, a comment line fails with
+"command not found: #", and a comment after a command becomes extra arguments or, if it contains parentheses, stops
+zsh from running the line, so copy the commands without their comments.
+
 ## Project layout
 
 | Path | Contents |
@@ -84,7 +94,7 @@ behave exactly like plain `swift`.
 | [`DevTools/OrbitStrings/`](../DevTools/OrbitStrings) | String Catalog tooling (extract, lint, compile, translate) that replaces Xcode's. See [localization.md](localization.md). |
 | [`Scripts/`](../Scripts) | `swiftpm.sh`, `build-app.sh`, `make-icon.swift`, `create-dev-cert.sh`, `notarize.sh`, and `toolchain/` (the PreviewsMacros stand-in). |
 | [`Config/`](../Config) | `Info.plist` (with `$(ORBIT_…)` placeholders) and the entitlements: `Orbit.entitlements` (release) and `Orbit-Debug.entitlements` (debug, also allows attaching a debugger). |
-| [`.github/workflows/`](../.github/workflows) | `release.yml`: tests, builds, notarizes and publishes a release for every pushed version tag. See [releasing.md](releasing.md#automated-releases). |
+| [`.github/workflows/`](../.github/workflows) | `release.yml`: tests, builds and publishes a release for every pushed version tag, and signs and notarizes the app once the Developer ID secrets are set (see [releasing.md](releasing.md#automated-releases)). `docs.yml`: builds this documentation and publishes it on GitHub Pages (see [Documentation site](#documentation-site)). |
 | `build/` | Output of `build-app.sh` (`build/debug/Orbit.app`, `build/release/Orbit.app`) and, next to each app, its debug information (`Orbit.app.dSYM`). Not committed. |
 | `.build/` | SwiftPM's build folder, including `toolchain-fixes/` from `swiftpm.sh`. Not committed. |
 

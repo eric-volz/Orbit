@@ -52,8 +52,10 @@ Pushing a version tag such as `v0.1.0` runs the same scripts on GitHub Actions a
 
 ## Versioning
 
-`build-app.sh` fills the placeholders in [`Config/Info.plist`](../Config/Info.plist) from environment variables
-(there is no version number to edit in a file):
+`build-app.sh` fills the placeholders in [`Config/Info.plist`](../Config/Info.plist) from environment variables, or
+from its defaults when they are not set. Users who build a source only release get the defaults, so the default
+`ORBIT_VERSION` in `build-app.sh` is the one version number to change for a release (see the
+[Release checklist](#release-checklist)):
 
 | Variable | Info.plist key | Default | Meaning |
 |---|---|---|---|
@@ -65,7 +67,7 @@ The script checks the result with `plutil -lint` and stops if any `$(…)` place
 
 Keep `ORBIT_BUNDLE_ID` at its default for releases. The bundle identifier decides the settings domain
 (the UserDefaults of `io.github.eric-volz.Orbit` by default), the keychain service for API keys (`<bundle id>.credentials`, with items labeled
-"Orbit: <account>" in the login keychain), the unified logging subsystem and, together with the signature, the privacy permissions macOS has granted. A release with
+`Orbit: <account>` in the login keychain), the unified logging subsystem and, together with the signature, the privacy permissions macOS has granted. A release with
 another identifier is, for macOS, a different app: users would lose their settings, keys and permissions. (The chat
 history folder `~/Library/Application Support/Orbit` does not depend on it.) Use other identifiers only for
 development copies, for example `ORBIT_BUNDLE_ID=io.github.eric-volz.Orbit.dev`.
@@ -136,10 +138,11 @@ it reports "Unnotarized Developer ID"; that is expected, and `notarize.sh` repea
 
 ### The development certificate
 
+Create the identity once, then sign every build with it:
+
 ```sh
-Scripts/create-dev-cert.sh                                        # once
+Scripts/create-dev-cert.sh
 ORBIT_SIGN_IDENTITY="Orbit Development" Scripts/build-app.sh debug
-Scripts/create-dev-cert.sh --remove                               # delete it again
 ```
 
 [`create-dev-cert.sh`](../Scripts/create-dev-cert.sh) creates a self-signed code-signing identity named "Orbit
@@ -253,8 +256,9 @@ The [release workflow](#automated-releases) does these steps for every pushed ve
     Users can check a download with `shasum -a 256 -c Orbit-0.1.0.zip.sha256`.
 
 3. **GitHub Releases.** Create a release for the tag (for example `v0.1.0`) at
-   <https://github.com/eric-volz/Orbit/releases>, paste the version's section of `CHANGELOG.md` as the notes, and attach
-   the zip and the checksum file. With the GitHub CLI:
+   <https://github.com/eric-volz/Orbit/releases>, paste the version's section of `CHANGELOG.md` as the notes, with the
+   wrapped lines of each paragraph and list item joined into one line (GitHub shows every line break; the release
+   workflow does this for you), and attach the zip and the checksum file. With the GitHub CLI:
 
     ```sh
     gh release create v0.1.0 build/release/Orbit-0.1.0.zip build/release/Orbit-0.1.0.zip.sha256 \
@@ -296,7 +300,7 @@ runner with the newest stable Xcode (change `runs-on` when GitHub retires that i
 5. **With the signing secrets:** signs with the Developer ID certificate from a temporary keychain, runs
    `Scripts/notarize.sh` and writes the SHA-256 checksum. The `Orbit.app.dSYM` is kept as a workflow artifact for
    90 days, for symbolicating crash reports of that build.
-6. **Creates the release** "Orbit <version>" with the notes, and with `Orbit-<version>.zip` and
+6. **Creates the release** `Orbit <version>` with the notes, and with `Orbit-<version>.zip` and
    `Orbit-<version>.zip.sha256` when the build was signed. If the release exists already (a release created in
    GitHub's web interface pushes its tag, too), the workflow only uploads the files and leaves the notes alone.
 
@@ -332,8 +336,22 @@ build** and **Notarization**, do the smoke test with an app built from the tag a
 and publish by pushing the tag.
 
 - [ ] **Version.** Choose the new `ORBIT_VERSION` and a higher `ORBIT_BUILD`. With the release workflow, the tag
-  sets the version and the build number is the commit count.
+  sets the version and the build number is the commit count. For a source only release, users build with the
+  defaults of `Scripts/build-app.sh`, so set its default `ORBIT_VERSION` to the new version before you tag; otherwise
+  every copy built from the tag reports the old version. Change the default where it is documented, too: the header
+  comment of `build-app.sh`, the Default column for `ORBIT_VERSION` in this page, development.md and
+  architecture.md, and the first sentence of known-limitations.md (`git grep -n '0\.1\.0'` lists every place).
 - [ ] **CHANGELOG.md.** Add a section for the version with the user-visible changes; it becomes the release notes.
+  Head it `## <version> (<date>)`, with the bare version as its second word (the workflow looks for it there), and
+  move the entries from **Unreleased** into it. The workflow joins the wrapped lines of paragraphs and list items,
+  so the section can be wrapped like the rest of the file. Keep it to paragraphs, lists, `###` headings, fenced code
+  blocks and tables with leading pipes: indented code blocks, `---` lines, link reference definitions and hard line
+  breaks do not survive the joining.
+- [ ] **Install commands.** README.md ("Get started") and [getting-started.md](getting-started.md#building-from-source)
+  clone the release with `git clone --branch v<version>` and name it in the text around the commands ("the current
+  release, 0.1.0", "clone without `--branch v0.1.0`"); change the tag and the version in all of them.
+- [ ] **Repository settings** (first public release only). Private vulnerability reporting is on, the social preview
+  is uploaded, and Pages builds from GitHub Actions; see [Distribution](#distribution).
 - [ ] **Unit tests.** `Scripts/swiftpm.sh test` passes.
 - [ ] **Localization lint.** 0 errors and 0 warnings for both catalogs:
 
@@ -354,7 +372,7 @@ and publish by pushing the tag.
   translated"), the icon, and no notes marked "!". The zip holds only `Orbit.app`; the `Orbit.app.dSYM` next to it
   stays on your Mac for debugging and symbolication.
 - [ ] **Notarization.** `ORBIT_NOTARY_PROFILE=orbit-notary Scripts/notarize.sh` ends with "is notarized;
-  distributable archive: …/Orbit-<version>.zip".
+  distributable archive: …/Orbit-&lt;version&gt;.zip".
 - [ ] **Smoke test on a clean Mac or a new user account**, from the zip, not from the build folder:
     - Download or copy the zip, unpack it, move `Orbit.app` to `/Applications` and open it: Gatekeeper opens it
       without a warning other than the usual "downloaded from the internet" question.

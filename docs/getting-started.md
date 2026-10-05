@@ -15,7 +15,8 @@ setup window asks on first launch, a few questions to try, how to update, and ho
 
 ## Requirements
 
-- **macOS 14 Sonoma or later**, on Apple silicon or Intel.
+- **macOS 14 Sonoma or later** to run Orbit, on Apple silicon or Intel. Building it needs macOS 15.2 or later (see
+  below).
 - **One language model** for the assistant (instant search works without one):
     - a **Claude subscription** (Pro or Max) with the Claude desktop app or Claude Code installed and signed in,
     - an **Anthropic API key**, or
@@ -23,7 +24,10 @@ setup window asks on first launch, a few questions to try, how to update, and ho
 
     See [Choosing a language model](providers.md) for how to set up each one.
 
-- **To build from source:** the Command Line Tools (`xcode-select --install`, Swift 6.x) or Xcode 16 or later.
+- **To build from source** (for now the only way to get Orbit): macOS 15.2 or later and the Command Line Tools
+  (`xcode-select --install`) or Xcode 16.3 or later, that is Swift 6.1 or newer, which GRDB.swift and
+  KeyboardShortcuts need. Orbit is developed and tested with Swift 6.3 (Xcode 26.4 or later, or its Command Line
+  Tools). The first build downloads these two Swift packages from GitHub and needs about 1.5 GB of free disk space.
 
 Every macOS permission is optional. Without one, Orbit turns off only the tools that need it (see
 [Permissions](permissions.md)).
@@ -35,19 +39,22 @@ developer account. The app belongs in your **Applications** folder.
 
 ### Building from source
 
-Orbit is a Swift package with no Xcode project. With the Command Line Tools or Xcode 16+ installed:
+Orbit is a Swift package with no Xcode project. With the Command Line Tools or Xcode 16.3+ installed:
 
 ```sh
-git clone https://github.com/eric-volz/Orbit.git
-cd Orbit
-Scripts/build-app.sh release          # builds build/release/Orbit.app
-cp -R build/release/Orbit.app /Applications/
+git clone --branch v0.1.0 https://github.com/eric-volz/Orbit.git &&
+cd Orbit &&
+Scripts/build-app.sh release &&
+cp -R build/release/Orbit.app /Applications/ &&
 open /Applications/Orbit.app
 ```
 
-This builds the latest source. To build a released version instead, clone its tag, for example
-`git clone --branch v0.1.0 https://github.com/eric-volz/Orbit.git`; the
-[releases page](https://github.com/eric-volz/Orbit/releases) lists the versions and their changes.
+Each `&&` runs the next command only if the one before succeeded, so a failed step stops there.
+
+`build-app.sh` writes the app to `build/release/Orbit.app`. These commands build the current release, 0.1.0; the
+[releases page](https://github.com/eric-volz/Orbit/releases) lists the versions and their changes. For the newest,
+unreleased source, clone without `--branch v0.1.0`. Copying to `/Applications` needs an administrator account. If
+Orbit is installed already, follow [Updating](#updating) instead, which removes the old copy first.
 
 `build-app.sh` compiles the app, bundles its resources and signs it. By default the signature is **ad hoc**, which
 is fine for trying Orbit on your own Mac.
@@ -180,13 +187,20 @@ example "3 emails sent to Claude". The [User guide](user-guide.md) explains ever
 
 ## Updating
 
-Orbit never checks for updates by itself. To update, get the new source, build again, quit Orbit (menu bar icon →
-**Quit Orbit**) and replace the app:
+Orbit never checks for updates by itself; the [releases page](https://github.com/eric-volz/Orbit/releases) lists new
+versions. To update, first get the new source in your clone:
+
+- **A release:** fetch the tags and switch to the new one, for example `git fetch --tags` and then
+  `git checkout v0.2.0`.
+- **The newest source:** `git checkout main` and then `git pull`.
+
+Then quit Orbit (menu bar icon → **Quit Orbit**), build again and replace the app. If the build fails, the commands
+stop and your installed copy stays as it is:
 
 ```sh
-git pull                              # or, for a release: git fetch --tags && git checkout v0.2.0
-Scripts/build-app.sh release
-rm -rf /Applications/Orbit.app && cp -R build/release/Orbit.app /Applications/
+Scripts/build-app.sh release &&
+rm -rf /Applications/Orbit.app &&
+cp -R build/release/Orbit.app /Applications/ &&
 open /Applications/Orbit.app
 ```
 

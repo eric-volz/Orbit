@@ -43,7 +43,7 @@ something waits for your OK on a card you can still edit.
   <tr>
     <td valign="top">🔒 <b>Private</b><br>No Orbit server, no account, no telemetry. Content goes to the model only when a question needs it, and the chat shows what was sent.</td>
     <td valign="top">🔌 <b>Your model</b><br>Your Claude subscription through Claude Code, the Anthropic API, or a fully local model with Ollama or LM Studio.</td>
-    <td valign="top">♿ <b>For everyone</b><br>Complete keyboard control, VoiceOver support, the macOS display settings, and both English and German.</td>
+    <td valign="top">♿ <b>For everyone</b><br>Keyboard control of almost everything, VoiceOver support, the macOS display settings, and both English and German.</td>
   </tr>
 </table>
 
@@ -68,8 +68,8 @@ Orbit answers in the language you write in. See the [tools reference](docs/tools
 ## A closer look
 
 **Results you can act on.** Answers come with cards: messages that open in Mail, drafts and replies ready for your
-review, files you can preview with <kbd>Space</kbd>, drag into another app or show in Finder. Everything works from
-the keyboard.
+review, files you can preview with <kbd>Space</kbd>, drag into another app or show in Finder. All cards except
+contact cards work from the keyboard.
 
 <p align="center"><img src="docs/assets/screenshots/mail-cards.png" width="620" alt="Mail cards in dark mode: a list of two emails, an email draft opened in Mail for review, and a reply whose text is on the clipboard."></p>
 
@@ -148,24 +148,29 @@ Read more: [Privacy](docs/privacy.md) · [Permissions](docs/permissions.md) · [
 
 ## Get started
 
-**Requirements:** macOS 14 Sonoma or later on Apple silicon or Intel, and one of the language models above.
+**Requirements:** Orbit runs on macOS 14 Sonoma or later, on Apple silicon or Intel, with one of the language models
+above. Building it, for now the only way to get it, needs macOS 15.2 or later.
 
 **Build from source.** There is no prebuilt download yet: you build Orbit yourself, which takes a few minutes and
-needs no Apple developer account. The [Releases page](https://github.com/eric-volz/Orbit/releases) lists every
-version with its changes. You only need the Command Line Tools (`xcode-select --install`) or Xcode 16 or later:
+needs no Apple developer account, only the Command Line Tools (`xcode-select --install`) or Xcode 16.3 or later.
+These commands build and install the current release, 0.1.0; the
+[Releases page](https://github.com/eric-volz/Orbit/releases) lists every version with its changes:
 
 ```sh
-git clone https://github.com/eric-volz/Orbit.git
-cd Orbit
-Scripts/build-app.sh release          # builds and signs build/release/Orbit.app
-mv build/release/Orbit.app /Applications/
+git clone --branch v0.1.0 https://github.com/eric-volz/Orbit.git &&
+cd Orbit &&
+Scripts/build-app.sh release &&
+cp -R build/release/Orbit.app /Applications/ &&
 open /Applications/Orbit.app
 ```
 
+If Orbit is installed already, follow [Updating](docs/getting-started.md#updating) instead, which removes the old
+copy first.
+
 Orbit appears in the menu bar (it has no Dock icon), and a short setup assistant helps you choose a language model,
 check the shortcut and allow the permissions you want. Every step can be skipped. A self-built app is signed ad hoc,
-so macOS asks for permissions again after each rebuild; [Releasing](docs/releasing.md) shows how a development
-certificate avoids that.
+so macOS asks for permissions again after each rebuild; [Getting started](docs/getting-started.md#building-from-source)
+shows how a development certificate avoids that.
 
 ➡️ [Getting started](docs/getting-started.md) walks through every step, with screenshots.
 
@@ -244,11 +249,12 @@ The [documentation index](docs/README.md) lists every page.
 ## Contributing
 
 Contributions are welcome: bug reports, ideas, translations, documentation and code. Orbit is a plain Swift package
-with a few scripts, so the Command Line Tools are enough to build and test it:
+with a few scripts, so the Command Line Tools are enough to compile it, run the unit tests (on mocks and invented
+data only) and start a debug build:
 
 ```sh
-Scripts/swiftpm.sh build                               # compile everything
-Scripts/swiftpm.sh test                                # unit tests, on mocks and invented data only
+Scripts/swiftpm.sh build
+Scripts/swiftpm.sh test
 Scripts/build-app.sh debug && open build/debug/Orbit.app
 ```
 

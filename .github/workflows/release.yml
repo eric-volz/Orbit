@@ -54,7 +54,7 @@ jobs:
           notes="$RUNNER_TEMP/release-notes.md"
 
           # The notes are the CHANGELOG.md section headed "## <version>" (the
-          # heading may go on, as in "## 0.1.0 (first public release)").
+          # heading may go on, as in "## 0.1.0 (2026-10-05)").
           awk -v version="$version" '
             /^## / {
               if (found) exit
@@ -240,14 +240,14 @@ jobs:
               sed -e "s|@TAG@|$TAG|g" -e "s|@REPO@|$GITHUB_SERVER_URL/$GH_REPO|g" >> "$notes" <<'EOF'
           ### Installing
 
-          This release has no prebuilt app; you build Orbit from source. You need macOS 14 or later and the Command
-          Line Tools (`xcode-select --install`) or Xcode 16 or later.
+          This release has no prebuilt app; you build Orbit from source. Orbit runs on macOS 14 or later; to build it
+          you need macOS 15.2 or later and the Command Line Tools (`xcode-select --install`) or Xcode 16.3 or later.
 
           ```sh
-          git clone --branch @TAG@ @REPO@.git
-          cd Orbit
-          Scripts/build-app.sh release
-          cp -R build/release/Orbit.app /Applications/
+          git clone --branch @TAG@ @REPO@.git &&
+          cd Orbit &&
+          Scripts/build-app.sh release &&
+          cp -R build/release/Orbit.app /Applications/ &&
           open /Applications/Orbit.app
           ```
 
@@ -256,6 +256,26 @@ jobs:
           EOF
             fi
             if [[ -s "$notes" ]]; then
+              # GitHub shows every line break in release notes, so the lines of each
+              # paragraph and list item are joined. Headings, block quotes, tables
+              # with leading pipes, fenced code blocks and new list items stay as they
+              # are (docs/releasing.md lists what else a section should avoid).
+              perl -e '
+                my ($fence, @out) = (0);
+                while (my $line = <STDIN>) {
+                  $line =~ s/\r?\n\z//;
+                  if ($line =~ /^\s*(```|~~~)/) { $fence = !$fence; push @out, $line; next }
+                  if (!$fence && @out && $out[-1] =~ /\S/ && $line =~ /\S/
+                      && $out[-1] !~ /^\s*(#|\||```|~~~)/ && $line !~ /^\s*([-*+] |\d+[.)] |#|>|\|)/) {
+                    $line =~ s/^\s+//;
+                    $out[-1] .= " $line";
+                    next;
+                  }
+                  push @out, $line;
+                }
+                print "$_\n" for @out;
+              ' < "$notes" > "$notes.joined"
+              mv "$notes.joined" "$notes"
               flags+=(--notes-file "$notes")
             fi
             gh release create "$TAG" ${assets[@]+"${assets[@]}"} "${flags[@]}"

@@ -22,9 +22,10 @@ advisory, crediting you if you wish.
 
 ## What to include
 
-- **What is affected:** the Orbit version (select `Orbit.app` in Finder and choose File → Get Info), the macOS version, Apple silicon
-  or Intel, a release build or your own build, and the language model provider you used (Claude subscription via
-  Claude Code, Anthropic API, or an OpenAI-compatible server).
+- **What is affected:** the Orbit version (select `Orbit.app` in Finder and choose File → Get Info), the tag or commit
+  you built it from (`git describe --tags --always` in your clone) and whether it is a release or a debug build, the
+  macOS version, Apple silicon or Intel, and the language model provider you used (Claude subscription via Claude
+  Code, Anthropic API, or an OpenAI-compatible server).
 - **What the problem is** and what an attacker gains, for example reading a file Orbit should never read, opening a
   link without a confirmation card, running an action that should need confirmation, reaching the MCP bridge from
   another origin, or leaking data into the logs.
